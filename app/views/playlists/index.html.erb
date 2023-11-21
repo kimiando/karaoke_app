@@ -1,0 +1,18 @@
+<%# <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/images/taylor.jpeg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">K-pop</h5>
+      </div>
+    </div>
+  </div>
+</div> %>
+<% if playlist.photo.attached? %>
+  <div class="image_card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path playlist.photo.key, height: 300, crop: :fill %>')">
+  <% else %>
+    <p>No photo attached</p>
+  <% end %>
+</div>
