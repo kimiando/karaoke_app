@@ -15,6 +15,6 @@ Rails.application.routes.draw do
     resources :seshes, only: [:create]
   end
 
-  resources :playlist, only: [:new, :create, :show, :destroy]
+  resources :playlists, only: [:new, :create, :show, :destroy]
   resources :songs, only: [:index, :show]
 end
