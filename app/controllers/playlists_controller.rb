@@ -14,7 +14,7 @@ class PlaylistsController < ApplicationController
 
     if @playlist.save
       flash[:notice] = "Playlist created!"
-      redirect_to playlist_path(@playlist)
+      redirect_to user_playlists_path(current_user)
     else
       flash[:alert] = "Playlist creation failed."
       render :new, status: :unprocessable_entity
