@@ -20,6 +20,11 @@ class PlaylistsController < ApplicationController
     end
   end
 
+  def show
+    @playlist = Playlist.find(params[:id])
+    # @playlists.user = current_user
+  end
+
   private
 
   def playlist_params

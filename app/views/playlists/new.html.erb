@@ -1,15 +1,17 @@
-<div class="playlist_page">
-  <div class="card-container">
-    <div class="card">
-      <div class="card-header">
-        <h3 class="text-center">Add a new playlist</h3>
-      </div>
-      <div class="card-body">
-        <%= simple_form_for [@playlist] do |f| %>
-          <%= f.input :name %>
-          <%= f.input :photo, as: :file %>
-          <%= f.submit class: 'create_btn btn-primary' %>
-        <% end %>
+<div class="container">
+  <div class="playlist_page">
+    <div class="card-container">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-center">Add a new playlist</h3>
+        </div>
+        <div class="card-body">
+          <%= simple_form_for [@playlist] do |f| %>
+            <%= f.input :name %>
+            <%= f.input :photo, as: :file %>
+            <%= f.submit class: 'create_btn btn-primary' %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
