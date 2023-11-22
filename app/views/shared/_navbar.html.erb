@@ -10,7 +10,13 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
+            <%= link_to "Home", root_path(current_user), class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
             <%= link_to "Playlist", user_playlists_path(current_user), class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Add a playlist", new_playlist_path(current_user), class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
