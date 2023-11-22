@@ -1,25 +1,25 @@
-<%# <div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
-    <div class="col-md-4">
-      <img src="/images/taylor.jpeg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">K-pop</h5>
+    <% @playlists.each do |playlist| %>
+      <div class="col-md-4">
+        <% if playlist.photo.attached? %>
+          <div class="image_card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path playlist.photo.key, height: 100, crop: :fill %>')">
+          <% else %>
+            <p>No photo attached</p>
+          <% end %>
+        </div>
       </div>
-    </div>
+      <div class="col-md-8">
+        <h1>playlist.name</h1>
+      </div>
+    <% end %>
   </div>
-</div> %>
-<div class="cards">
-  <% @playlists.each do |playlist| %>
-    <div class="card">
-      <% if playlist.photo.attached? %>
-        <div class="image_card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path playlist.photo.key, height: 100, crop: :fill %>')">
-          <h1>hi</h1>
-        <% else %>
-          <p>No photo attached</p>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
 </div>
+<% @playlists.each do |playlist| %>
+  <% if playlist.photo.attached? %>
+    <div class="image_card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path playlist.photo.key, height: 100, crop: :fill %>')">
+    <% else %>
+      <p>No photo attached</p>
+    <% end %>
+  </div>
+<% end %>
