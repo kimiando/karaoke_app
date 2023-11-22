@@ -1,8 +1,13 @@
 <div class="container">
-  <div class="songs">
-    <% songs.each do |song| %>
-      <%#= render the card for the song here %>
-      <p><%= song.title %></p>
-    <% end %>
-  </div>
+  <% songs.each do |song| %>
+    <div class="card-product my-2 card-product-search-song">
+      <%= link_to '', song_path(song), class: 'card-product-search-link' %>
+      <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
+      <%= image_tag song.photo_url, height: 100, crop: :fill %>
+      <div class="card-product-infos">
+        <p><%= song.title %></p>
+        <p><%= song.artist.name %></p>
+      </div>
+    </div>
+  <% end %>
 </div>

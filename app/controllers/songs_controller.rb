@@ -18,4 +18,8 @@ class SongsController < ApplicationController
       format.text { render partial: "songs/list", locals: { songs: @songs }, formats: [:html] }
     end
   end
+
+  def show
+    @song = Song.find(params[:id])
+  end
 end
