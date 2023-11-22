@@ -1,0 +1,16 @@
+<div data-controller="search-songs">
+  <%= form_with url: songs_path, method: :get, html: {class: "mb-4", data: { search_songs_target: "form" }} do |f| %>
+    <%= f.label "Type a song title" %>
+    <%= f.text_field :query,
+                      class: "form-control",
+                      value: params[:query],
+                      data: {
+                      action: "keyup->search-songs#update",
+                      search_songs_target: "input"
+                      }
+                      %>
+  <% end %>
+  <div data-search-songs-target='list'>
+    <%= render "songs/list", songs: @songs %>
+  </div>
+</div>
