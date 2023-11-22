@@ -179,3 +179,11 @@ file30 = File.open(Rails.root.join("app/assets/images/seeds/playlist30.jpeg"))
 playlist30.photo.attach(io: file30, filename: "playlist30.jpeg", content_type: "image/jpeg")
 
 puts "done creating playlist seeds for user"
+
+puts "creating song seeds..."
+
+Playlist.all.each do |playlist|
+  rand(10..20).times do
+    Bookmark.create(playlist: playlist, song: Song.all.sample)
+  end
+end

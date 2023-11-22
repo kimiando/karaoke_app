@@ -30,6 +30,18 @@
   padding: 16px;
 }
 
+.playlist-song-card{
+  background-color: #F4F4F4;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  box-shadow: none;
+  img{
+    border-radius: 8px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  
 .card-product-search-song {
   position: relative;
 }
