@@ -1,15 +1,16 @@
 <div class="container">
   <% @playlists.each do |playlist| %>
-    <div class="card-product my-2">
-      <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
-      <% if playlist.photo.attached? %>
-        <%= cl_image_tag playlist.photo.key, height: 100, crop: :fill %>
-      <% else %>
-        <p>No photo attached</p>
-      <% end %>
-      <div class="card-product-infos">
-        <h2><%= playlist.name %></h2>
+    <%= link_to playlist_path(playlist) do  %>
+      <div class="card-product my-2">
+        <% if playlist.photo.attached? %>
+          <%= cl_image_tag playlist.photo.key, height: 100, crop: :fill %>
+        <% else %>
+          <p>No photo attached</p>
+        <% end %>
+        <div class="card-product-infos">
+          <h2><%= playlist.name %></h2>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 </div>
