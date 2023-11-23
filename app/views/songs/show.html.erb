@@ -18,15 +18,12 @@
           <%= simple_form_for [@bookmark] do |f| %>
             <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
             <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
+            <%= playlist.name %>
             <%= f.button :button do %>
-              <%= playlist.name %>
+              <i class="fa-solid fa-plus" style="color: #000000;"></i>
             <% end %>
           <% end %>
         <% end %>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
