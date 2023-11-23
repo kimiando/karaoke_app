@@ -1,8 +1,15 @@
+<%= link_to songs_path() do %>
+  <i class="fa-solid fa-less-than"></i>
+<% end %>
 <div class="song-page-container">
-  <%= image_tag @song.photo_url, height: 300, crop: :fill, class: "song-image" %>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Add to playlist
-  </button>
+  <%= image_tag @song.photo_url, height: 360, crop: :fill, class: "song-image" %></li>
+<div class="song-info-title-name">
+  <p><i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i><%= @song.title %></p>
+  <p><i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i><%= @song.artist.name %></p>
+</div>
+<button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add to playlist
+</button>
 </div>
 <!-- Button trigger modal -->
 <!-- Modal -->
