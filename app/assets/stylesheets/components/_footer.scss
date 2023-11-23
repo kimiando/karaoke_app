@@ -1,0 +1,31 @@
+.footer {
+  background: #FF6C22;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0px 50px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer_item {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}

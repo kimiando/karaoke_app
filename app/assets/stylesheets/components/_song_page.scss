@@ -1,4 +1,6 @@
 .song-page-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 16px 24px 16px 24px;
 }
