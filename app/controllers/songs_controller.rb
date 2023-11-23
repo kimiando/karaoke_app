@@ -20,7 +20,13 @@ class SongsController < ApplicationController
   end
 
   def show
-    @song = Song.find(params[:id])
-    @bookmark = Bookmark.new
+    @bookmark = Song.find(params[:id])
+    @song = @bookmark.song
+    @bookmark.destroy
   end
-end
+
+  # def destroy
+  #   @song = Booking.find(params[:id])
+  #   @song.destroy
+  #   redirect_to song_path(@song), notice: 'Bookmark was successfully deleted.'
+  # end

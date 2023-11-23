@@ -12,9 +12,14 @@
         </div>
         <% @playlist.bookmarks.each do |bookmark| %>
           <div class="card-product playlist-song-card">
-            <%= image_tag bookmark.song.photo_url, height: 100, crop: :fill %>
+            <%= image_tag bookmark.song.photo_url, crop: :fill %>
             <div class="card-product-infos">
               <h2><%= bookmark.song.title %></h2>
+              <%= link_to song_path(bookmark.song),
+            method: :delete,
+            data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
+                <i class="fa-solid fa-trash trash-can" style="color: #dd8d31;"></i>
+              <% end %>
             </div>
           </div>
         <% end %>
