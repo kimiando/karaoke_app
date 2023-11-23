@@ -2,19 +2,36 @@
   background: #FF6C22;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 60px;
+  height: 88px;
   padding: 0px 50px;
   color: rgba(255, 255, 255, 0.3);
-}
-.footer-links {
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: end;
 }
 
+
 .footer_item {
+  padding-top: 20px;
   list-style: none;
+  font-size: 30px;
+  color: white;
 }
+
+.nav-link{
+  text-align: center;
+}
+
+.footer_item p {
+  font-size: 10px;
+}
+
+.icon-grey {
+  color: #1a1515;
+}
+
+
+
+
 
 html, body {
   height: 100%;
@@ -22,10 +39,13 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+
 }
 .content {
   flex: 1 0 auto;
 }
 .footer {
   flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
 }
