@@ -1,0 +1,10 @@
+#map{
+height: 100vh;
+position: relative;
+
+  .map-input{
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+  }
+}

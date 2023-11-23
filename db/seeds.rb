@@ -9,6 +9,7 @@
 puts "cleaning the database.."
 User.destroy_all
 Playlist.destroy_all
+Place.destroy_all
 
 puts "adding users"
 user_1 = User.create(
@@ -187,3 +188,12 @@ Playlist.all.each do |playlist|
     Bookmark.create(playlist: playlist, song: Song.all.sample)
   end
 end
+
+Place.create!(
+  name: "karaoke",
+  address: "4th floor, Meguro IN Building, 2-12-7 Kamiosaki, Shinagawa-ku",
+  price_level: 1000,
+  room_option: "joysound",
+  latitude: 35.6469,
+  longitude: 139.7077
+)
