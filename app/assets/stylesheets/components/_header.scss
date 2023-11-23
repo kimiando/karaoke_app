@@ -3,8 +3,14 @@
   flex-wrap: nowrap;
   color: white;
   justify-content: space-between;
+  align-items: center;
+  margin: 32px 16px;
+}
+
+.header h1 {
+  font-size: 32px;
 }
 
 .fa-solid-plus-icon {
-  font-size: 30px;
+  font-size: 32px;
 }

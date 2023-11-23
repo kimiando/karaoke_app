@@ -2,16 +2,19 @@
   background: #FF6C22;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 80px;
+  height: 88px;
   padding: 0px 50px;
   color: rgba(255, 255, 255, 0.3);
   justify-content: space-between;
+  align-items: end;
 }
+
+
 .footer_item {
   padding-top: 20px;
   list-style: none;
   font-size: 30px;
+  color: white;
 }
 
 .nav-link{
@@ -21,6 +24,14 @@
 .footer_item p {
   font-size: 10px;
 }
+
+.icon-grey {
+  color: #1a1515;
+}
+
+
+
+
 
 html, body {
   height: 100%;
