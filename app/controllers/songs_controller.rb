@@ -22,11 +22,10 @@ class SongsController < ApplicationController
   def show
     @bookmark = Song.find(params[:id])
     @song = @bookmark.song
-    @bookmark.destroy
   end
 
-  # def destroy
-  #   @song = Booking.find(params[:id])
-  #   @song.destroy
-  #   redirect_to song_path(@song), notice: 'Bookmark was successfully deleted.'
-  # end
+  def destroy
+    @song = Booking.find(params[:id])
+    @song.destroy
+    redirect_to song_path(@song), notice: 'Bookmark was successfully deleted.'
+  end
