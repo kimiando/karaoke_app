@@ -1,24 +1,26 @@
 <div class="footer">
-  <div class="footer-links">
-    <li class="footer_item">
-      <%= link_to user_playlists_path(current_user), class: "nav-link" do %>
-        <i class="fa-solid fa-house" style="color: #000000;"></i>
-      <% end %>
-    </li>
-    <li class="footer_item">
-      <%= link_to songs_path, class: "nav-link" do %>
-        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-      <% end %>
-    </li>
-    <li class="footer_item">
-      <%= link_to flats_path, class: "nav-link" do %>
-        <i class="fa-solid fa-map" style="color: #000000;"></i>
-      <% end %>
-    </li>
-    <li class="footer_item">
-      <%= link_to user_path(current_user), class: "nav-link" do %>
-        <i class="fa-solid fa-user" style="color: #000000;"></i>
-      <% end %>
-    </li>
-  </div>
+  <li class="footer_item">
+    <%= link_to user_playlists_path(current_user), class: "nav-link" do %>
+      <i class="fa-solid fa-house fa-solid-footer" style="color: #ffffff;"></i>
+      <p>Home</p>
+    <% end %>
+  </li>
+  <li class="footer_item">
+    <%= link_to songs_path, class: "nav-link" do %>
+      <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+      <p>Search Songs</p>
+    <% end %>
+  </li>
+  <li class="footer_item">
+    <%= link_to places_path, class: "nav-link" do %>
+      <i class="fa-solid fa-map" style="color: #ffffff;"></i>
+      <p>Find Karaoke</p>
+    <% end %>
+  </li>
+  <li class="footer_item">
+    <%= link_to user_path(current_user), class: "nav-link" do %>
+      <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+      <p>Profile</p>
+    <% end %>
+  </li>
 </div>
