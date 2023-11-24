@@ -664,281 +664,281 @@ place65 = Place.create!(
   price_level: "¥",
   room_option: "Joy Sound & Live Dam"
 )
-place65.save
-place66 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, national route 403, Kuiseke 2-chome, Chikuma, Nagano Prefecture, Chubu Region, 387-0011, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place66.save
-place67 = Place.create!(
-  name: "Karaoke kan",
-  address: "Karaoke-kan, 7, Hachioji, Tokyo, 193-0931, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place67.save
+# place65.save
+# place66 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, national route 403, Kuiseke 2-chome, Chikuma, Nagano Prefecture, Chubu Region, 387-0011, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place66.save
+# place67 = Place.create!(
+#   name: "Karaoke kan",
+#   address: "Karaoke-kan, 7, Hachioji, Tokyo, 193-0931, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place67.save
 
-place68 = Place.create!(
-  name: "Karaoke kan",
-  address: "Karaoke-kan, Tamagawa-dori, Sangenjaya, Setagaya, Tokyo, 154-0024, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place68.save
-place69 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, 公園通り, 中央一丁目, Matsumoto, Nagano Prefecture, Chubu Region, 390-0811, Japan",
-  price_level: "¥",
-  room_option: "Live Dam"
-)
-place69.save
+# place68 = Place.create!(
+#   name: "Karaoke kan",
+#   address: "Karaoke-kan, Tamagawa-dori, Sangenjaya, Setagaya, Tokyo, 154-0024, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place68.save
+# place69 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, 公園通り, 中央一丁目, Matsumoto, Nagano Prefecture, Chubu Region, 390-0811, Japan",
+#   price_level: "¥",
+#   room_option: "Live Dam"
+# )
+# place69.save
 
-place70 = Place.create!(
-  name: "Karaoke Joy Joy",
-  address: "Karaoke JOY JOY, agatanno-forest street, 深志一丁目, Matsumoto, Nagano Prefecture, Chubu Region, 390-0815, Japan ",
-  price_level: "¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place70.save
+# place70 = Place.create!(
+#   name: "Karaoke Joy Joy",
+#   address: "Karaoke JOY JOY, agatanno-forest street, 深志一丁目, Matsumoto, Nagano Prefecture, Chubu Region, 390-0815, Japan ",
+#   price_level: "¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place70.save
 
-place71 = Place.create!(
-  name: "Shidax",
-  address: "Shidax, Yanagi-dori, 北栄一丁目, Urayasu, Chiba Prefecture, 279-0002, Japan",
-  price_level: "¥¥",
-  room_option: "Joy Sound"
-)
-place71.save
+# place71 = Place.create!(
+#   name: "Shidax",
+#   address: "Shidax, Yanagi-dori, 北栄一丁目, Urayasu, Chiba Prefecture, 279-0002, Japan",
+#   price_level: "¥¥",
+#   room_option: "Joy Sound"
+# )
+# place71.save
 
-place72 = Place.create!(
-  name: "Rainbow",
-  address: "レインボー, Rokku Broadway, Asakusa 2-chome, Asakusa, Taito, Tokyo, 111-0032, Japan",
-  price_level: "¥¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place72.save
+# place72 = Place.create!(
+#   name: "Rainbow",
+#   address: "レインボー, Rokku Broadway, Asakusa 2-chome, Asakusa, Taito, Tokyo, 111-0032, Japan",
+#   price_level: "¥¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place72.save
 
-place73 = Place.create!(
-  name: "Karaoke Kan",
-  address: "Karaoke-kan, 純情商店街, Koenji-kita 3-chome, Koenji, Suginami, Tokyo, 166-0002, Japan ",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place73.save
+# place73 = Place.create!(
+#   name: "Karaoke Kan",
+#   address: "Karaoke-kan, 純情商店街, Koenji-kita 3-chome, Koenji, Suginami, Tokyo, 166-0002, Japan ",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place73.save
 
-place74 = Place.create!(
-  name: "Karaoke Kan",
-  address: "Karaoke-kan, 純情商店街, Koenji-kita 3-chome, Koenji, Suginami, Tokyo, 166-0002, Japan ",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place74.save
+# place74 = Place.create!(
+#   name: "Karaoke Kan",
+#   address: "Karaoke-kan, 純情商店街, Koenji-kita 3-chome, Koenji, Suginami, Tokyo, 166-0002, Japan ",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place74.save
 
-place75 = Place.create!(
-  name: "Big Echo",
-  address: "Big Echo, Sunshine Central Street, Minami-Ikebukuro 3-chome, Higashi-Ikebukuro 1-chome, Toshima, Tokyo, 171-8557, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place75.save
+# place75 = Place.create!(
+#   name: "Big Echo",
+#   address: "Big Echo, Sunshine Central Street, Minami-Ikebukuro 3-chome, Higashi-Ikebukuro 1-chome, Toshima, Tokyo, 171-8557, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place75.save
 
-place76 = Place.create!(
-  name: "BanBan",
-  address: "BanBan, 高円寺ストリート, Koenji-kita 3-chome, Koenji, Suginami, Tokyo, 166-0002, Japan",
-  price_level: "¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place76.save
+# place76 = Place.create!(
+#   name: "BanBan",
+#   address: "BanBan, 高円寺ストリート, Koenji-kita 3-chome, Koenji, Suginami, Tokyo, 166-0002, Japan",
+#   price_level: "¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place76.save
 
-place77 = Place.create!(
-  name: "BanBan",
-  address: "BanBan, すずらん通り, Matsubara 1-chome, Setagaya, Tokyo, 156-0063, Japan ",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place77.save
+# place77 = Place.create!(
+#   name: "BanBan",
+#   address: "BanBan, すずらん通り, Matsubara 1-chome, Setagaya, Tokyo, 156-0063, Japan ",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place77.save
 
-place78 = Place.create!(
-  name: "Flat",
-  address: "Flat, Nakasugi dori Ave., Asagayaminami, Koenji, Suginami, Tokyo, 166-8570, Japan",
-  price_level: "¥¥",
-  room_option: "Live Dam"
-)
-place78.save
+# place78 = Place.create!(
+#   name: "Flat",
+#   address: "Flat, Nakasugi dori Ave., Asagayaminami, Koenji, Suginami, Tokyo, 166-8570, Japan",
+#   price_level: "¥¥",
+#   room_option: "Live Dam"
+# )
+# place78.save
 
-place79 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, 1, Nakano 5, Nakano, Kimitsu, Chiba Prefecture, 299-1151, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place79.save
+# place79 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, 1, Nakano 5, Nakano, Kimitsu, Chiba Prefecture, 299-1151, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place79.save
 
-place80 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, 1, Nishi Ward, Yokohama, Kanagawa Prefecture, 220-0005, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place80.save
+# place80 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, 1, Nishi Ward, Yokohama, Kanagawa Prefecture, 220-0005, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place80.save
 
-place81 = Place.create!(
-  name: "Karaoke Kan",
-  address: "Karaoke-kan, Parnard street, Minamisaiwai 2-chome, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place81.save
+# place81 = Place.create!(
+#   name: "Karaoke Kan",
+#   address: "Karaoke-kan, Parnard street, Minamisaiwai 2-chome, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place81.save
 
-place82 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, 23 厚木PGビル2F, Nakacho 2-chome, Nakachō, Izumicho, Atsugi, Kanagawa Prefecture, 243-0018, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place82.save
+# place82 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, 23 厚木PGビル2F, Nakacho 2-chome, Nakachō, Izumicho, Atsugi, Kanagawa Prefecture, 243-0018, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place82.save
 
-place83 = Place.create!(
-  name: "Karaoke Day Tripper",
-  address: "Karaoke Day Tripper, 5, Chuo 3-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
-  price_level: "¥¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place83.save
+# place83 = Place.create!(
+#   name: "Karaoke Day Tripper",
+#   address: "Karaoke Day Tripper, 5, Chuo 3-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
+#   price_level: "¥¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place83.save
 
-place84 = Place.create!(
-  name: "Big Echo",
-  address: "Big Echo, Kanagawa Route 2 Mitsuzawa Line, Tsuruyacho 2-chome, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place84.save
+# place84 = Place.create!(
+#   name: "Big Echo",
+#   address: "Big Echo, Kanagawa Route 2 Mitsuzawa Line, Tsuruyacho 2-chome, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place84.save
 
-place85 = Place.create!(
-  name: "Big Echo",
-  address: "Big Echo, 5th Ave., Minami-Saiwai, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place85.save
+# place85 = Place.create!(
+#   name: "Big Echo",
+#   address: "Big Echo, 5th Ave., Minami-Saiwai, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place85.save
 
-place86 = Place.create!(
-  name: "Big Echo",
-  address: "BIG ECHO, Parnard street, Minamisaiwai 2-chome, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan ",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place86.save
+# place86 = Place.create!(
+#   name: "Big Echo",
+#   address: "BIG ECHO, Parnard street, Minamisaiwai 2-chome, Nishi Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan ",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place86.save
 
-place87 = Place.create!(
-  name: "Big Echo",
-  address: "Big Echo, 14, Chuo 1-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place87.save
+# place87 = Place.create!(
+#   name: "Big Echo",
+#   address: "Big Echo, 14, Chuo 1-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place87.save
 
-place88 = Place.create!(
-  name: "Cote d'Azur",
-  address: "Cote d'Azur, 31, Chuo 1-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place88.save
+# place88 = Place.create!(
+#   name: "Cote d'Azur",
+#   address: "Cote d'Azur, 31, Chuo 1-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place88.save
 
-place89 = Place.create!(
-  name: "Karaoke Kan",
-  address: "Karaoke-kan, Tokyo Kanjo, 真砂町, Naka Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place89.save
+# place89 = Place.create!(
+#   name: "Karaoke Kan",
+#   address: "Karaoke-kan, Tokyo Kanjo, 真砂町, Naka Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place89.save
 
-place90 = Place.create!(
-  name: "Cote d'Azur",
-  address: "Cote d'Azur, Tokyo Kanjo, Masagocho 4-chome, Naka Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
-  price_level: "¥¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place90.save
+# place90 = Place.create!(
+#   name: "Cote d'Azur",
+#   address: "Cote d'Azur, Tokyo Kanjo, Masagocho 4-chome, Naka Ward, Yokohama, Kanagawa Prefecture, 231-0017, Japan",
+#   price_level: "¥¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place90.save
 
-place91 = Place.create!(
-  name: "Karaoke Pasela",
-  address: "Karaoke Pasela, Dobutsuen Dori, Ueno 4-chome, Taito, Tokyo,",
-  price_level: "¥¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place91.save
+# place91 = Place.create!(
+#   name: "Karaoke Pasela",
+#   address: "Karaoke Pasela, Dobutsuen Dori, Ueno 4-chome, Taito, Tokyo,",
+#   price_level: "¥¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place91.save
 
-place92 = Place.create!(
-  name: "Cote d'Azur",
-  address: "Cote d'Azur, 6, Chuo 2-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
-  price_level: "¥¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place92.save
+# place92 = Place.create!(
+#   name: "Cote d'Azur",
+#   address: "Cote d'Azur, 6, Chuo 2-chome, Chūō, Ebina, Kanagawa Prefecture, 243-0432, Japan",
+#   price_level: "¥¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place92.save
 
-place93 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, アクト南口一番街商店街, Matsugaecho, Minami Ward, Sagamihara, Kanagawa Prefecture, 252-0313, Japan ",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place93.save
+# place93 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, アクト南口一番街商店街, Matsugaecho, Minami Ward, Sagamihara, Kanagawa Prefecture, 252-0313, Japan ",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place93.save
 
-place94 = Place.create!(
-  name: "Karaoke BanBan",
-  address: "カラオケBanBan, National Highway Route 129, Tsumadakita 1-chome, Atsugi, Kanagawa Prefecture, 243-0816, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place94.save
+# place94 = Place.create!(
+#   name: "Karaoke BanBan",
+#   address: "カラオケBanBan, National Highway Route 129, Tsumadakita 1-chome, Atsugi, Kanagawa Prefecture, 243-0816, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place94.save
 
-place95 = Place.create!(
-  name: "Karaoke Manekineko",
-  address: "Karaoke Manekineko, 秦野二宮線, 河原町, Hadano, Kanagawa Prefecture, 257-8799, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place95.save
+# place95 = Place.create!(
+#   name: "Karaoke Manekineko",
+#   address: "Karaoke Manekineko, 秦野二宮線, 河原町, Hadano, Kanagawa Prefecture, 257-8799, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place95.save
 
-place96 = Place.create!(
-  name: "Pegasus",
-  address: "Pegasus, 国道409号, Kibara, Yachimata, Chiba Prefecture, 289-1113, Japan",
-  price_level: "¥¥¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place96.save
+# place96 = Place.create!(
+#   name: "Pegasus",
+#   address: "Pegasus, 国道409号, Kibara, Yachimata, Chiba Prefecture, 289-1113, Japan",
+#   price_level: "¥¥¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place96.save
 
-place97 = Place.create!(
-  name: "Uta Hiroba",
-  address: "歌広場, Akabane Ichibangai Shopping Street, Akabane 1-chome, Kita, Tokyo, 115-0045, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place97.save
+# place97 = Place.create!(
+#   name: "Uta Hiroba",
+#   address: "歌広場, Akabane Ichibangai Shopping Street, Akabane 1-chome, Kita, Tokyo, 115-0045, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place97.save
 
-place98 = Place.create!(
-  name: "White House",
-  address: "White House, Hongo-dori Avenue, Komagome 2-chome, Toshima, Tokyo, 170-0003, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place98.save
+# place98 = Place.create!(
+#   name: "White House",
+#   address: "White House, Hongo-dori Avenue, Komagome 2-chome, Toshima, Tokyo, 170-0003, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place98.save
 
-place99 = Place.create!(
-  name: "Big Echo",
-  address: "Big Echo, Okubo-dori Avenue, Hyakunincho 2-chome, Shinjuku, Tokyo, 169-0073, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place99.save
+# place99 = Place.create!(
+#   name: "Big Echo",
+#   address: "Big Echo, Okubo-dori Avenue, Hyakunincho 2-chome, Shinjuku, Tokyo, 169-0073, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place99.save
 
-place100 = Place.create!(
-  name: "Big Echo",
-  address: "Big Echo, Harumi-dori Avenue, Yurakucho 1-chome, Yurakucho, Chiyoda, Tokyo, 100-0006, Japan",
-  price_level: "¥",
-  room_option: "Joy Sound & Live Dam"
-)
-place100.save
+# place100 = Place.create!(
+#   name: "Big Echo",
+#   address: "Big Echo, Harumi-dori Avenue, Yurakucho 1-chome, Yurakucho, Chiyoda, Tokyo, 100-0006, Japan",
+#   price_level: "¥",
+#   room_option: "Joy Sound & Live Dam"
+# )
+# place100.save
