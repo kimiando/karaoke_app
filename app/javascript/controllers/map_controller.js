@@ -10,14 +10,19 @@ export default class extends Controller {
 
   connect() {
     mapboxgl.accessToken = this.apiKeyValue
+    // nagivator.geolocation.getCurrentPosition((position)=>{
+    //   console.log(position)
+    // });
+
     this.map = new mapboxgl.Map({
     container: this.element,
     style: 'mapbox://styles/mapbox/streets-v12', // style URL
     // center: [-74.5, 40], // starting position [lng, lat]
-    // zoom: 9, // starting zoom
+    // zoom: 15, // starting zoom
     });
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
+
   }
 
   #fitMapToMarkers() {
@@ -26,7 +31,7 @@ export default class extends Controller {
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
 
-  #addMarkersToMap(){
+  #addMarkersToMap( ){
     console.log(this.markersValue);
     this.markersValue.forEach((marker) => {
       const customMarker = document.createElement("div")
