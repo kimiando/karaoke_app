@@ -1,11 +1,14 @@
 <div class="footer">
-  <li class="footer_item">
-    <%= link_to user_playlists_path(current_user), class: "nav-link" do %>
-      <% current_page?(user_playlists_path(current_user), action: "index") ? icon_class = "icon-grey" : icons_class = "" %>
-      <i class="fa-solid fa-house <%= icon_class %> "></i>
-      <p class="<%= icon_class %>">Home</p>
-    <% end %>
-  </li>
+  <% if user_signed_in? %>
+    <li class="footer_item">
+      <%= link_to user_playlists_path(current_user), class: "nav-link" do %>
+        <% current_page?(user_playlists_path(current_user), action: "index") ? icon_class = "icon-grey" : icons_class = "" %>
+        <i class="fa-solid fa-house <%= icon_class %> "></i>
+        <p class="<%= icon_class %>">Home</p>
+      <% end %>
+    </li>
+    <% #add another else statement %>
+  <% end %>
   <li class="footer_item footer_item_search_songs">
     <%= link_to songs_path, class: "nav-link" do %>
       <% current_page?(songs_path, action: "index") ? icon_class = "icon-grey" : icons_class = "" %>
@@ -20,11 +23,20 @@
       <p class="<%= icon_class %>">Find Karaoke</p>
     <% end %>
   </li>
-  <li class="footer_item">
-    <%= link_to user_path(current_user), class: "nav-link" do %>
-      <% current_page?(user_path(current_user), action: "show") ? icon_class = "icon-grey" : icons_class = "" %>
-      <i class="fa-solid fa-user <%= icon_class %>"></i>
-      <p class="<%= icon_class %>">Profile</p>
-    <% end %>
-  </li>
+  <% if user_signed_in? %>
+    <li class="footer_item">
+      <%= link_to user_path(current_user), class: "nav-link" do %>
+        <% current_page?(user_path(current_user), action: "show") ? icon_class = "icon-grey" : icons_class = "" %>
+        <i class="fa-solid fa-user <%= icon_class %>"></i>
+        <p class="<%= icon_class %>">Profile</p>
+      <% end %>
+    </li>
+  <% else %>
+    <li class="footer_item">
+      <%= link_to new_user_session_path, class: "nav-link" do %>
+        <i class="fa-solid fa-user"></i>
+        <p>Profile</p>
+      <% end %>
+    </li>
+  <% end %>
 </div>

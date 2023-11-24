@@ -1,6 +1,7 @@
 class Place < ApplicationRecord
+  enum price: ["¥", "¥¥", "¥¥¥"]
   validates :name, presence: true
-  validates :address, presence: true
+  validates :address, presence: true, uniqueness: true
   validates :price_level, presence: true
   validates :room_option, presence: true
 
