@@ -3,8 +3,10 @@
     <div class="landing-title">
       <h1>Welcome to SongFlow</h1>
       <h2>Craft personalized karaoke lists with your favorite hits. Your stage, your playlist – let the singing adventure begin!</h2>
-      <%= link_to  new_user_session_path do %>
-        <button type="button" class="btn btn-primary btn-primary-landing">Sign In</button>
+      <% unless current_user %>
+        <%= link_to  new_user_session_path do %>
+          <button type="button" class="btn btn-primary btn-primary-landing">Sign In</button>
+        <% end %>
       <% end %>
     </div>
   </div>

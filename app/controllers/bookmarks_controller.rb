@@ -2,7 +2,7 @@ class BookmarksController < ApplicationController
   def create
     @bookmark = Bookmark.new(bookmark_params)
     @bookmark.save
-    flash[:notice] = "#{@bookmark.song.title} added"
+    flash[:notice] = "'#{@bookmark.song.title}' added"
     redirect_to playlist_path(@bookmark.playlist)
   end
 
