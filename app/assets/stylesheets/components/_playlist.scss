@@ -1,0 +1,118 @@
+.playlist-btn {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.playlist-btn-item {
+  border: white;
+  width: 184px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border-style: double;
+  padding: 0px 16px;
+  padding-top: 4px;
+  border-radius: 16px;
+}
+
+.playlist-btn-item p {
+  padding-left: 8px;
+}
+
+.card-img-top {
+  margin-top: 8px;
+  height: 360px;
+  width: 360px;
+  margin-bottom: 24px;
+}
+
+h5 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.card-body {
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.fa-less-than {
+  color: #FF6C22;
+  font-size: 24px;
+  padding-top: 16px;
+  padding-left: 16px
+}
+
+.card-product .card-product-infos h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bookmark-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 16px;
+  background-color: #1a1515;
+  padding-bottom: 8px;
+}
+
+.bookmark-title {
+  width: 240px;
+  color: white
+}
+
+.bookmark-img {
+  width: 100px;
+  height: 100px;
+}
+
+.bookmark-row {
+  display: flex;
+  margin-bottom: 8px;
+  background-color: rgba(120, 120, 120, 0.3);
+  align-items: center;
+}
+
+.bookmark-row h3 {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.bookmark-artist {
+  padding-left: 10px;
+}
+
+.fa-xmark {
+  padding-right: 16px;
+}
+
+
+.playlist-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-container {
+  background-color: #1a1515;
+  display: flex;
+  justify-content: center;
+  margin: 0px 24px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+
+.create-container h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 120px;
+}
