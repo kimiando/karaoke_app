@@ -14,8 +14,7 @@
     <div class="content">
       <%= yield %>
     </div>
-    <% unless params[:controller] == "pages" && params[:action] == "home" %>
-      <%= render "shared/footer" %>
-    <% end %>
+    <%= render "shared/footer" %>
   </body>
 </html>
+<%# <% unless params[:controller] == "pages" && params[:action] == "home" %>
