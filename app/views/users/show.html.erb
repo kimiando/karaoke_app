@@ -1,6 +1,7 @@
 <div class="profile-container">
   <%= image_tag "user1.png", class: "profile-image" %>
   <h1><%= @user.first_name%> <%= @user.last_name %></h1>
-  <p>@<%= @user.user_name %></p>
-  <p><%= @user.email %></p>
+  <h2>@<%= @user.user_name %></h2>
+  <h3><%= @user.email %></h3>
+  <%= link_to "Log out", user_playlists_path(current_user), class: "logout-button" %>
 </div>

@@ -3,6 +3,7 @@
   height: 250px;
   background-color: white;
   border-radius: 50%;
+  margin-bottom: 24px;
 }
 
 .profile-container {
@@ -10,4 +11,18 @@
   color: white;
   flex-direction: column;
   align-items: center;
+  margin-top: 80px;
+}
+
+.logout-button {
+  margin-top: 24px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: rgba(180, 180, 180, 0.3);
+  border: solid;
+  border-color: rgba(180, 180, 180, 0.3);
+  padding: 4px;
+  border-radius: 32px;
+  width: 136px;
 }
