@@ -4,8 +4,8 @@
 <div class="create-container">
   <h3>Create New Playlist</h3>
   <%= simple_form_for [@playlist] do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
+    <%= f.input :name, label_html: { class: "form-label" } %>
+    <%= f.input :photo, as: :file, label_html: { class: "form-label" } %>
     <%= f.submit class: 'create_btn btn-primary' %>
   <% end %>
 </div>
