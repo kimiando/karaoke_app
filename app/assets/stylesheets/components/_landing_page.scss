@@ -1,0 +1,33 @@
+.landing-page {
+  background-image: asset-url("pic1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-container {
+  margin-top: 336px;
+  padding: 24px 24px;
+  display: flex;
+  color: white;
+}
+
+.btn-primary-landing {
+  background-color: rgba(120, 120, 120, 0.3);
+  border-style: none;
+  margin-bottom: 20px ;
+}
+
+.landing-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-title h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.landing-title h2 {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
