@@ -30,13 +30,13 @@
             <h2>See All</h2>
           </div>
           <div class="homepage-song-conatiner">
-            <% @recent_bookmarks.each do |bookmark| %>
-              <%= link_to song_path(bookmark.song ) do %>
+            <% @recent_songs.each do |song| %>
+              <%= link_to song_path(song) do %>
                 <div class="homepage-song-content">
-                  <%= image_tag bookmark.song.photo_url, class: "homepage-song-img", crop: :fill %>
+                  <%= image_tag song.photo_url, class: "homepage-song-img", crop: :fill %>
                   <div class="homepage-song-title-box">
-                    <span class="homepage-song-title"><%= bookmark.song.title %></span>
-                    <span class="homepage-song-artist"><%= bookmark.song.artist.name %></span>
+                    <span class="homepage-song-title"><%= song.title %></span>
+                    <span class="homepage-song-artist"><%= song.artist.name %></span>
                   </div>
                 </div>
               <% end %>
@@ -83,19 +83,19 @@
         </div>
       </div>
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <% @bookmarks.each do |bookmark| %>
-          <%= link_to song_path(bookmark.song), class: "playlist-card-link" do %>
+        <% @recent_songs.each do |song| %>
+          <%= link_to song_path(song), class: "playlist-card-link" do %>
             <div class="bookmark-row">
-              <%= image_tag bookmark.song.photo_url, class: "bookmark-img", crop: :fill %>
+              <%= image_tag song.photo_url, class: "bookmark-img", crop: :fill %>
               <div class="card-product-infos bookmark-title">
-                <h3><%= bookmark.song.title %></h3>
-                <span class="bookmark-artist"><%= bookmark.song.artist.name %></span>
+                <h3><%= song.title %></h3>
+                <span class="bookmark-artist"><%= song.artist.name %></span>
               </div>
             <% end %>
             <div data-controller="toggle-play" class="play-btn">
               <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
                 <audio controls class="d-none" data-toggle-play-target="audio">
-                  <source src=<%= bookmark.song.audio_url %> type="audio/ogg">
+                  <source src=<%= song.audio_url %> type="audio/ogg">
                 </audio>
               </i>
             </div>
