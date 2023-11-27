@@ -1,13 +1,22 @@
-<div class="container">
   <% songs.each do |song| %>
-    <div class="card-product my-2 card-product-search-song">
-      <%= link_to '', song_path(song), class: 'card-product-search-link' %>
-      <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
-      <%= image_tag song.photo_url, height: 100, crop: :fill %>
-      <div class="card-product-infos-song-search">
-        <h1><%= song.title %></p>
-        <h2><%= song.artist.name %></p>
+  <div class="search-contianer">
+    <%= link_to song_path(song), class: 'song-card-link' do %>
+      <%= image_tag song.photo_url, height: 100, crop: :fill, class: "search-song-img" %>
+      <div class="card-product-infos song-bookmark-title">
+        <div class="search-song-container">
+          <div class="search-song-title-container">
+            <span class="search-song-title"><%= song.title %></span>
+            <span class="search-song-artist-name"><%= song.artist.name %></span>
+          </div>
+        </div>
       </div>
+    <% end %>
+    <div data-controller="toggle-play" class="play-btn">
+      <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
+        <audio controls class="d-none" data-toggle-play-target="audio">
+          <source src=<%= song.audio_url %> type="audio/ogg">
+        </audio>
+      </i>
     </div>
-  <% end %>
-</div>
+  </div>
+<% end %>

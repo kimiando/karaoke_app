@@ -1,5 +1,5 @@
 <%= link_to user_playlists_path(current_user) do %>
-  <i class="fa-solid fa-less-than"></i>
+  <i class="fa-solid fa-arrow-left"></i>
 <% end %>
 <div class="playlist-container">
   <div class="card-img-top">
@@ -10,36 +10,47 @@
     <% end %>
   </div>
   <h5><%= @playlist.name %></h5>
-  <div class="playlist-btn">
-    <div class="playlist-btn-item">
-      <%= link_to edit_playlist_path() do %>
-        <i class="fa-regular fa-pen-to-square playlist-btn"></i>
-      <% end %>
-      <p>Edit Playlist</p>
-    </div>
-    <div class="playlist-btn-item">
-      <%= link_to user_playlists_path(current_user),
+  <p class="song-count">240 songs</p>
+  <div class="playlist-btn-container">
+    <div class="playlist-btn">
+      <div class="playlist-btn-item">
+        <%= link_to edit_playlist_path(), class: "playlist-btn-edit" do %>
+          <i class="fa-regular fa-pen-to-square playlist-btn"></i>
+          <p>Edit Playlist</p>
+        <% end %>
+      </div>
+      <div class="playlist-btn-item">
+        <%= link_to user_playlists_path(current_user),
               method: :delete,
+              class: "playlist-btn-delete",
               data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
-        <i class="fa-solid fa-trash-can playlist-btn"></i>
-      <% end %>
-      <p>Delete</p>
+          <i class="fa-solid fa-trash-can playlist-btn"></i>
+          <p>Delete</p>
+        <% end %>
+      </div>
     </div>
   </div>
   <div class="bookmark-container">
-    <% @playlist.bookmarks.each do |bookmark| %>
-      <div class="bookmark-row">
-        <%= image_tag bookmark.song.photo_url, class: "bookmark-img", crop: :fill %>
-        <div class="card-product-infos bookmark-title">
-          <h3><%= bookmark.song.title %></h3>
-          <span class="bookmark-artist"><%= bookmark.song.artist.name %></span>
-        </div>
-        <%= link_to song_path(bookmark.song),
+    <div class="song-container">
+      <h1>Songs</h1>
+    </div>
+    <div>
+      <% @playlist.bookmarks.each do |bookmark| %>
+        <%= link_to song_path(bookmark.song), class: "playlist-card-link" do %>
+          <div class="bookmark-row">
+            <%= image_tag bookmark.song.photo_url, class: "bookmark-img", crop: :fill %>
+            <div class="card-product-infos bookmark-title">
+              <h3><%= bookmark.song.title %></h3>
+              <span class="bookmark-artist"><%= bookmark.song.artist.name %></span>
+            </div>
+            <%= link_to song_path(bookmark.song),
             method: :delete,
             data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
-          <i class="fa-solid fa-xmark" style="color: #000000;"></i>
-        <% end %>
-      </div>
-    <% end %>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            <% end %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 .playlist-btn {
   font-size: 20px;
-  color: white;
+  color: #181A20;
   display: flex;
   justify-content: space-evenly;
   height: 40px;
@@ -8,34 +8,35 @@
 }
 
 .playlist-btn-item {
-  border: white;
   width: 176px;
+  height: 48px;
   display: flex;
   align-items: baseline;
   justify-content: center;
-  border-style: double;
   padding: 0px 16px;
-  padding-top: 5px;
-  border-radius: 16px;
+  padding-top: 11px;
+  border-radius: 50px;
   margin: 0px 8px;
+  background-color: #FF9235;
 }
 
 .playlist-btn-item p {
   padding-left: 8px;
   font-size: 18px;
+  color: #181A20;
 }
 
 .card-img-top {
   margin-top: 8px;
-  height: 360px;
-  width: 360px;
+  height: 320px;
+  width: 320px;
   margin-bottom: 24px;
 }
 
 h5 {
   color: white;
   font-size: 24px;
-  margin-bottom: 16px;
+  margin: 8px;
 }
 
 .card-body {
@@ -43,11 +44,11 @@ h5 {
   padding-bottom: 8px;
 }
 
-.fa-less-than {
-  color: #FF6C22;
+.fa-arrow-left {
+  color: white;
   font-size: 24px;
-  padding-top: 16px;
-  padding-left: 16px
+  padding-top: 24px;
+  padding-left: 24px
 }
 
 .card-product .card-product-infos h3 {
@@ -57,11 +58,19 @@ h5 {
 
 .bookmark-container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin: 16px;
-  background-color: #1a1515;
+  margin: 4px 16px;
+  background-color: #181A20;
   padding-bottom: 8px;
+  border-top-style: groove;
+  padding-top: 20px;
+  margin-top: 12px;
+}
+
+.bookmark-container h1 {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 16px;
 }
 
 .bookmark-title {
@@ -72,22 +81,25 @@ h5 {
 .bookmark-img {
   width: 100px;
   height: 100px;
+  border-radius: 24px;
 }
+
 
 .bookmark-row {
   display: flex;
-  margin-bottom: 8px;
-  background-color: rgba(120, 120, 120, 0.3);
+  margin-bottom: 12px;
+  background-color: #181A20;
   align-items: center;
 }
 
 .bookmark-row h3 {
-  padding-left: 10px;
+  padding-left: 16px;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .bookmark-artist {
-  padding-left: 10px;
+  padding-left: 16px;
 }
 
 .fa-xmark {
@@ -127,4 +139,83 @@ h5 {
 
 .search-input {
   color: white;
+}
+
+.fa-solid-user-icon {
+  font-size: 32px;
+  padding-left: 56px;
+}
+
+.fa-circle-plus {
+  font-size: 88px;
+  padding-right: 24px;
+}
+
+.add-list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-top-style: groove;
+  border-color: aliceblue;
+  padding: 16px 0px;
+  margin-top: 8px;
+}
+
+.add-list-btn-title {
+  color: white;
+  font-size: 20px;
+}
+
+.my-playlist-container {
+  padding: 0 24px;
+}
+
+.playlist-count {
+  color: white;
+  font-size: 20px;
+}
+
+.song-count {
+  color: grey;
+  font-size: 16px;
+}
+
+.song-title-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+}
+
+.song-container {
+  width: 360px;
+}
+
+.playlist-card-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playlist-btn-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: white;
+}
+
+.playlist-btn-delete {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: white;
+}
+
+.add-to-playlist-btn {
+  display: flex;
+  align-items: center;
+}
+
+.fa-ellipsis-vertical {
+  color: white;
+  padding-left: 14px;
 }
