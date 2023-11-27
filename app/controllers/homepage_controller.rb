@@ -1,5 +1,6 @@
 class HomepageController < ApplicationController
     def index
-      @playlists = Playlist.where(user: current_user)
+      @recent_bookmarks = current_user.bookmarks.sort_by(&:created_at).first(10)
+      @bookmarks = Bookmark.all.sort_by(&:created_at)
     end
 end
