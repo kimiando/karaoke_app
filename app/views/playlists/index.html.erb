@@ -1,19 +1,26 @@
-<div class="container">
+<div class="container my-playlist-container">
   <div class="header">
     <h1>My Playlist</h1>
-    <%= link_to new_playlist_path, class: "nav-link" do %>
-      <i class="fa-solid fa-plus fa-solid-plus-icon" style="color: #ffffff;"></i>
+  </div>
+  <span class="playlist-count">14 playlists</span>
+  <div class="add-list-btn">
+    <%= link_to new_playlist_path, class: "add-to-playlist-btn" do %>
+      <i class="fa-solid fa-circle-plus" style="color: #FF9235;"></i>
+      <span class="add-list-btn-title">Add New playlist</span>
     <% end %>
   </div>
   <% @playlists.each do |playlist| %>
     <%= link_to playlist_path(playlist) do  %>
-      <div class="card-product my-2">
+      <div class="card-product">
         <% if playlist.photo.attached? %>
           <%= cl_image_tag playlist.photo.key, height: 100, crop: :fill %>
         <% else %>
           <p>No photo attached</p>
         <% end %>
-        <h2><%= playlist.name %></h2>
+        <div class="song-title-card">
+          <h2><%= playlist.name %></h2>
+          <p class="song-count">240 songs</p>
+        </div>
       </div>
     <% end %>
   <% end %>

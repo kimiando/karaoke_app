@@ -10,31 +10,6 @@
 }
 
 
-.card-product-search-song {
-  position: relative;
-  width: 360px;
-  margin-left: 12px;
-  border-radius: 0;
-  background-color: rgba(180, 180, 180, 0.5)
-}
-
-.card-product-search-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.card-product-infos-song-search h1 {
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 0;
-  margin-top: 8px;
-  padding-left: 16px;
-  font-weight: bold;
-  color: white;
-}
 
 .card-product-infos-song-search h2 {
   font-size: 16px;
@@ -49,8 +24,8 @@
 
 
 .song-image {
-  width: 360px;
-  height: 360px;
+  width: 320px;
+  height: 320px;
 }
 
 .song-page-container {
@@ -66,6 +41,7 @@
   display: flex;
   flex-direction: column;
   width: 94%;
+  align-items: center;
 }
 
 .song-info-title-name p {
@@ -74,6 +50,7 @@
   border-bottom: solid;
   border-color: #dccccc;
   padding-left: 10px;
+  width: 320px;
 }
 
 .fa-solid-song-info {
@@ -92,4 +69,61 @@
 .song-search-bar {
   margin-left: 21px;
   margin-top: 32px;
+}
+
+.song-card-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.song-bookmark-title {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  color: white;
+  padding-left: 24px;
+}
+
+.search-song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-song-artist-name {
+  font-size: 16px;
+}
+
+.search-song-img {
+  border-radius: 24px;
+}
+
+.search-song-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-song-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-circle-play-size {
+  font-size: 24px;
+  color: #FF9235;
+  padding-left: 9px;
+}
+
+.play-btn {
+  z-index: 1000;
+}
+
+.search-contianer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }

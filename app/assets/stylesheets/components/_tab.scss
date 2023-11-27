@@ -1,0 +1,52 @@
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  border-style: none;
+}
+
+.nav-content {
+  width: 87%;
+  margin-top: 24px;
+}
+
+.nav-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-tabs .nav-link {
+  background-color: #181A20;
+  color: #6a6a6a;
+  border-style: none;
+  font-size: 19px;
+  border-bottom-style: inset;
+  border-color: #6a6a6a;
+  border-width: 3px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #181A20;
+  color: #FF9235;
+  border-color: #FF9235;
+  border-width: 3px;
+}
+
+.tab-content-item{
+  display: flex;
+  flex-direction: row;
+  font-size: 19px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.tab-content-item h1 {
+  font-size: 19px;
+  color: white;
+}
+
+.tab-content-item h2 {
+  font-size: 16px;
+  color: #FF9235;
+}

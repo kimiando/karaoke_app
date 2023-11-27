@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show] do
     resources :playlists, only: [:index]
     resources :seshes, only: [:index]
+    resources :homepage, only: [:index]
   end
 
   resources :bookmarks, only: [:create, :destroy] do
