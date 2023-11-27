@@ -10,20 +10,63 @@ export default class extends Controller {
 
   connect() {
     mapboxgl.accessToken = this.apiKeyValue
-    // nagivator.geolocation.getCurrentPosition((position)=>{
-    //   console.log(position)
-    // });
-
-    this.map = new mapboxgl.Map({
+  //   if(navigator.geolocation) {
+  //     console.log("hi");
+  //     navigator.geolocation.getCurrentPosition(position=>{
+  //       // const { latitude, longtitude }
+  //       console.log(position.coords);
+  //       console.log(position.coords.longitude);
+  //       const location = [position.coords.longitude,position.coords.latitude]
+  //       console.log(location);
+  //       this.#createMap(location)
+  //     })
+  // }
+  this.map = new mapboxgl.Map({
     container: this.element,
     style: 'mapbox://styles/mapbox/streets-v12', // style URL
-    // center: [-74.5, 40], // starting position [lng, lat]
-    // zoom: 15, // starting zoom
-    });
-    this.#addMarkersToMap()
-    this.#fitMapToMarkers()
+    center: [139.50,35.65],  // starting position [lng, lat]
+    zoom: 10, // starting zoom
+  });
 
-  }
+  this.map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+    })
+  )
+  this.#addMarkersToMap()
+  this.#fitMapToMarkers()
+}
+
+#createMap(location) {
+  console.log("creating map");
+  console.log(location);
+  this.map = new mapboxgl.Map({
+    container: this.element,
+    style: 'mapbox://styles/mapbox/streets-v12', // style URL
+    center: location,  // starting position [lng, lat]
+    zoom: 14, // starting zoom
+  });
+
+  this.map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+    })
+  )
+  this.#addMarkersToMap()
+  // this.#fitMapToMarkers();
+}
 
   #fitMapToMarkers() {
     const bounds = new mapboxgl.LngLatBounds()
@@ -41,6 +84,7 @@ export default class extends Controller {
       .setLngLat([marker.lng, marker.lat])
       .setPopup(popup)
       .addTo(this.map);
+      // this.map.setZoom(15)
     })
   }
 }
