@@ -1,6 +1,7 @@
 class PlaylistsController < ApplicationController
   def index
     @playlists = Playlist.where(user: current_user)
+    @new_playlist = Playlist.new
   end
 
   def new
@@ -44,7 +45,7 @@ class PlaylistsController < ApplicationController
   def destroy
     @playlist = Playlist.find(params[:id])
     @playlist.destroy
-    redirect_to playlist_path
+    redirect_to user_playlists_path(current_user), status: :see_other
   end
 
   private

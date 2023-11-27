@@ -20,7 +20,7 @@
         <% end %>
       </div>
       <div class="playlist-btn-item">
-        <%= link_to user_playlists_path(current_user),
+        <%= link_to playlist_path(@playlist),
               method: :delete,
               class: "playlist-btn-delete",
               data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>

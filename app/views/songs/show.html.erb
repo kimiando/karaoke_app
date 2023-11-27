@@ -24,23 +24,25 @@
 <!-- Button trigger modal -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <% current_user.playlists.each do |playlist| %>
-          <%= simple_form_for [@bookmark] do |f| %>
-            <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
-            <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
-            <%= playlist.name %>
-            <%= f.button :button do %>
-              <i class="fa-solid fa-plus" style="color: #000000;"></i>
+  <div class=" d-flex justify-content-center align-items-center vh-100">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">My Playlists</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <% current_user.playlists.each do |playlist| %>
+            <%= simple_form_for [@bookmark] do |f| %>
+              <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
+              <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
+              <%= playlist.name %>
+              <%= f.button :button do %>
+                <i class="fa-solid fa-plus" style="color: #000000;"></i>
+              <% end %>
             <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
     </div>
   </div>
