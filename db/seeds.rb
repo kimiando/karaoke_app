@@ -254,7 +254,7 @@ place7 = Place.create!(
 )
 place7.save
 file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin.jpeg"))
-place6.photo.attach(io: file, filename: "karaokenotetsujin.jpeg", content_type: "image/jpeg")
+place7.photo.attach(io: file, filename: "karaokenotetsujin.jpeg", content_type: "image/jpeg")
 
 place8 = Place.create!(
   name: "Big Echo",
@@ -273,8 +273,8 @@ place9 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place9.save
-file = File.open(Rails.root.join("app/assets/images/place/big-echo.png"))
-place9.photo.attach(io: file, filename: "big-echo.png", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
+place9.photo.attach(io: file, filename: "bigecho.jpeg", content_type: "image/jpeg")
 
 place10 = Place.create!(
   name: "Big Echo",
@@ -323,8 +323,8 @@ place16 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place16.save
-file = File.open(Rails.root.join("app/assets/images/place/bigecho1.png"))
-place16.photo.attach(io: file, filename: "bigecho1.png", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
+place16.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
 
 place17 = Place.create!(
   name: "Big Echo",
@@ -423,9 +423,8 @@ place28 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place28.save
-file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
 place28.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
-
 
 place30 = Place.create!(
   name: "Karaoke Kan",
@@ -455,7 +454,7 @@ place33 = Place.create!(
 )
 place33.save
 file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
-place30.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
+place33.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
 
 place34 = Place.create!(
   name: "Karaoke Manekineko",
@@ -494,8 +493,8 @@ place37 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place37.save
-file = File.open(Rails.root.join("app/assets/images/place/bigecho.jpeg"))
-place37.photo.attach(io: file, filename: "bigecho.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
+place37.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
 
 place40 = Place.create!(
   name: "Karaoke Manekineko",
@@ -514,7 +513,7 @@ place41 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place41.save
-file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
 place41.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
 place42 = Place.create!(
@@ -534,7 +533,7 @@ place43 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place43.save
-file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
 place43.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
 place44 = Place.create!(
@@ -544,7 +543,7 @@ place44 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place44.save
-file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
 place44.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
 place45 = Place.create!(
@@ -598,7 +597,7 @@ place52 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place52.save
-file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
 place52.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
 place53 = Place.create!(
@@ -691,3 +690,4 @@ place53.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/j
 #   room_option: "Joy Sound & Live Dam"
 # )
 # place64.save
+gi
