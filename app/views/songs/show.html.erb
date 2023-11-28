@@ -6,29 +6,24 @@
 <div class="song-info-title-name">
   <p><i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i><%= @song.title %></p>
   <p><i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i><%= @song.artist.name %></p>
-  <p>Difficulty</p>
-  <p>Key</p>
-  <p>Hype Number</p>
-  <div data-controller="toggle-play" class="play-btn">
-    <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
-      <audio controls class="d-none" data-toggle-play-target="audio">
-        <source src=<%= @song.audio_url %> type="audio/ogg">
-      </audio>
-    </i>
+</div>
+<div class="song-create-btn-container">
+  <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <% if @song.playlists.where(user: current_user).exists? %>
+      View Playlists
+    <% else %>
+      Add To Playlist
+    <% end %>
+  </button>
+  <div class="song-create_btn">
+    <%= link_to "Add New Song", songs_path %>
   </div>
 </div>
-<button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  <% if @song.playlists.where(user: current_user).exists? %>
-    View playlists
-  <% else %>
-    Add to playlist
-  <% end %>
-</button>
+</div>
 <%# add something %>
 <%# <div class="container"> %>
-<div class="cards">
+<div class="lyrics-card-container">
   <% if @song.lyrics.present? %>
-    <h2> <%= @song.title %> Lyrics:</h2>
     <p><%= @song.lyrics.gsub(/\n/, "<br/>").html_safe %></p>
   <% else %>
     <p>No lyrics available for this song.</p>
@@ -38,7 +33,7 @@
 <!-- Button trigger modal -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class=" d-flex justify-content-center align-items-center vh-100">
+  <div class="modal-container">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -48,8 +43,9 @@
         <div class="modal-body">
           <% current_user.playlists.each do |playlist| %>
             <% if playlist.songs.where(id: @song.id).exists? %>
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center add-to-playlist-form-if-exist">
                 <%= playlist.name %>
+                <i class="fa-solid fa-check" style="color: #ffffff;"></i>
               </div>
             <% else %>
               <%= simple_form_for [@bookmark] do |f| %>
@@ -68,4 +64,3 @@
       </div>
     </div>
   </div>
-</div>
