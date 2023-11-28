@@ -1,4 +1,5 @@
 class Place < ApplicationRecord
+  has_one_attached :photo
   enum price_level: ["¥", "¥¥", "¥¥¥"]
   validates :name, presence: true
   validates :address, presence: true, uniqueness: true
