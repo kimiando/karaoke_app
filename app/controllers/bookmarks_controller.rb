@@ -6,6 +6,10 @@ class BookmarksController < ApplicationController
     redirect_to playlist_path(@bookmark.playlist)
   end
 
+  def update
+    @bookmark = Bookmark(params[:id])
+  end
+
   private
 
   def bookmark_params

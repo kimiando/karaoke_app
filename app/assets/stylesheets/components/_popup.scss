@@ -1,0 +1,51 @@
+.popup-location {
+  background-color: #ffffff;
+  border: 2px solid #df8826;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the pop-up */
+  padding-bottom: 12px;
+}
+hr{
+  color: #df8826;
+}
+.location-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-name {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.highlight {
+  color: #ff7e67;
+}
+
+.location-info {
+  margin-top: 16px;
+}
+
+.fa-bounce {
+  animation: bounce 0.5s infinite alternate;
+}
+
+.room-option {
+  margin-top: 10px;
+}
+
+.room-option-label {
+  margin-bottom: 5px;
+}
+
+.room-option-value {
+  font-style: italic;
+  color: #3498db;
+}
