@@ -1,4 +1,15 @@
-<h1><%= place.name %></h1>
-<p><%= place.address %></p>
-<p><%= place.price_level %></p>
-<p><%= place.room_option %></p>
+<div class="popup-location">
+  <div class="location-header">
+    <h1 class="location-name"><%= place.name %>
+    </h1>
+    <%# <%= cl_image_tag place.photo.key, height: 150, width:100, crop: :fill %>
+  </div>
+  <%# add a photo here %>
+  <hr>
+  <p class="location-info"><i class="fa-solid fa-location-dot fa-bounce" style="color: #df8826;"></i> <%= place.address %></p>
+  <p class="location-info"><strong><%= place.price_level %></strong></p>
+  <div class="room-option">
+    <p class="room-option-label"><em>Room Option:</em></p>
+    <p class="room-option-value"><em><%= place.room_option %></em></p>
+  </div>
+</div>
