@@ -96,10 +96,14 @@ h5 {
   padding-left: 16px;
   font-size: 18px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .bookmark-artist {
   padding-left: 16px;
+  color: grey;
 }
 
 .fa-xmark {
@@ -132,7 +136,7 @@ h5 {
 }
 
 .form-label {
-  color: white;
+  color: black;
   margin-left: 2px;
   font-size: 24px;
 }
@@ -218,4 +222,27 @@ h5 {
 .fa-ellipsis-vertical {
   color: white;
   padding-left: 14px;
+}
+
+.mb-3 .playlist_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formplaylist {
+  background: rgba(255, 146, 53, 0.97);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.form-control {
+  width: 100%;
+  height: 37px;
+  background: rgba(24, 26, 32, 0.5);
+  border-style: none;
+}
+
+.modal-content {
+  border-radius: 24px;
 }

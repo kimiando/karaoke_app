@@ -1,11 +1,13 @@
-<div class="bar-container">
-  <div class="logo-container">
-    <i class="fa-solid fa-music"></i>
-    <span class="logo-title">SongFlow</span>
+<div class="logo-body">
+  <div class="bar-container">
+    <div class="logo-container">
+      <i class="fa-solid fa-music"></i>
+      <span class="logo-title">SongFlow</span>
+    </div>
+    <%= link_to user_path(current_user), class: "fa-solid-user-icon" do %>
+      <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+    <% end %>
   </div>
-  <%= link_to user_path(current_user), class: "fa-solid-user-icon" do %>
-    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-  <% end %>
 </div>
 <div class="nav-container">
   <div>
