@@ -85,19 +85,24 @@
         </div>
       </div>
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <% @recent_songs.each do |song| %>
-          <%= link_to song_path(song), class: "playlist-card-link" do %>
-            <div class="bookmark-row">
-              <%= image_tag song.photo_url, class: "bookmark-img", crop: :fill %>
+        <% @recent_bookmarks.each do |bookmark| %>
+          <div class="bookmark-row">
+            <%= link_to song_path(bookmark.song), class: "playlist-card-link" do %>
+              <%= image_tag bookmark.song.photo_url, class: "bookmark-img", crop: :fill %>
               <div class="card-product-infos bookmark-title">
-                <h3><%= song.title %></h3>
-                <span class="bookmark-artist"><%= song.artist.name %></span>
+                <h3><%= bookmark.song.title %></h3>
+                <span class="bookmark-artist"><%= bookmark.song.artist.name %></span>
+                <%= render "shared/seshes",
+            avg_song_difficulty: bookmark.avg_song_difficulty,
+            avg_hype_number: bookmark.avg_hype_number,
+            number_times_sang: bookmark.number_times_sang
+            %>
               </div>
             <% end %>
             <div data-controller="toggle-play" class="play-btn">
               <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
                 <audio controls class="d-none" data-toggle-play-target="audio">
-                  <source src=<%= song.audio_url %> type="audio/ogg">
+                  <source src=<%= bookmark.song.audio_url %> type="audio/ogg">
                 </audio>
               </i>
             </div>

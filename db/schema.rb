@@ -92,6 +92,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_28_021217) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "key"
+    t.string "recommended"
     t.integer "hype_number"
     t.index ["bookmark_id"], name: "index_seshes_on_bookmark_id"
   end
