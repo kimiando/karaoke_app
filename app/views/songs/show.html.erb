@@ -27,9 +27,12 @@
 <%# add something %>
 <%# <div class="container"> %>
 <div class="cards">
-  <h2> <%= @song.title %> Lyrics:</h2>
-  <p><%= @song.lyrics.gsub(/\n/, "<br/>").html_safe %></p>
-</div>
+  <% if @song.lyrics.present? %>
+    <h2> <%= @song.title %> Lyrics:</h2>
+    <p><%= @song.lyrics.gsub(/\n/, "<br/>").html_safe %></p>
+  <% else %>
+    <p>No lyrics available for this song.</p>
+  <% end %>
 </div>
 <%# </div> %>
 <!-- Button trigger modal -->
