@@ -10,6 +10,6 @@ class User < ApplicationRecord
   has_many :songs, through: :bookmarks
 
   def unique_bookmarks
-    bookmarks.uniq { |b| b.song_id }
+    bookmarks.order(created_at: :desc).limit(30).uniq { |b| b.song_id }
   end
 end

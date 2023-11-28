@@ -70,7 +70,7 @@
             <h2>See All</h2>
           </div>
           <div class="homepage-song-conatiner">
-            <% @recent_bookmarks.each do |bookmark| %>
+            <% @recent_bookmarks.reverse.each do |bookmark| %>
               <%= link_to song_path(bookmark.song ) do %>
                 <div class="homepage-song-content">
                   <%= image_tag bookmark.song.photo_url, class: "homepage-song-img", crop: :fill %>
