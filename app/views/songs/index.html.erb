@@ -2,9 +2,9 @@
   <div data-controller="search-songs">
     <%= form_with url: songs_path, method: :get, html: {class: "mb-4", data: { search_songs_target: "form" }} do |f| %>
       <%= f.text_field :query,
-                      class: "form-control song-search-bar",
+                      class: "song-search-bar",
                       value: params[:query],
-                      placeholder: "Type here...",
+                      placeholder: " Search Song ...",
                       data: {
                       action: "keyup->search-songs#update",
                       search_songs_target: "input"

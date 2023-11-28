@@ -18,7 +18,11 @@
   </div>
 </div>
 <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Add to playlist
+  <% if @song.playlists.where(user: current_user).exists? %>
+    View playlists
+  <% else %>
+    Add to playlist
+  <% end %>
 </button>
 </div>
 <!-- Button trigger modal -->
@@ -33,12 +37,20 @@
         </div>
         <div class="modal-body">
           <% current_user.playlists.each do |playlist| %>
-            <%= simple_form_for [@bookmark] do |f| %>
-              <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
-              <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
-              <%= playlist.name %>
-              <%= f.button :button do %>
-                <i class="fa-solid fa-plus" style="color: #000000;"></i>
+            <% if playlist.songs.where(id: @song.id).exists? %>
+              <div class="d-flex justify-content-between align-items-center">
+                <%= playlist.name %>
+              </div>
+            <% else %>
+              <%= simple_form_for [@bookmark] do |f| %>
+                <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
+                <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
+                <div class="d-flex justify-content-between add-to-playlist-form">
+                  <span class="title"><%= playlist.name %></span>
+                  <%= f.button :button do %>
+                    <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                  <% end %>
+                </div>
               <% end %>
             <% end %>
           <% end %>

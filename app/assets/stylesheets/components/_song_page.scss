@@ -51,6 +51,9 @@
   border-color: #dccccc;
   padding-left: 10px;
   width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .fa-solid-song-info {
@@ -67,6 +70,11 @@
 }
 
 .song-search-bar {
+  color: white;
+  width: 90%;
+  height: 37px;
+  background: #303338;
+  border-style: none;
   margin-left: 21px;
   margin-top: 32px;
 }
@@ -91,10 +99,15 @@
 .search-song-title {
   font-size: 18px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
 }
 
 .search-song-artist-name {
   font-size: 16px;
+  color: grey;
 }
 
 .search-song-img {
@@ -134,3 +147,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+.add-to-playlist-form .btn{
+  padding: 0;
+}
+.add-to-playlist-form .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// .add-to-playlist-conatiner {
+//   display: flex !important;
+//   width: 300px;
+//   height: 48px;
+// }
+
+// .modal {
+//   display: flex;
+//   justify-content: center;
+// }

@@ -1,8 +1,8 @@
 <div class="container my-playlist-container">
   <div class="header">
-    <h1>My Playlist</h1>
+    <h1>My Playlists</h1>
   </div>
-  <span class="playlist-count">14 playlists</span>
+  <span class="playlist-count"><%= current_user.playlists.count %> playlists</span>
   <div class="add-list-btn" data-bs-toggle="modal" data-bs-target="#new-playlist-form">
     <i class="fa-solid fa-circle-plus" style="color: #FF9235;"></i>
     <span class="add-list-btn-title">Add New playlist</span>
@@ -17,7 +17,7 @@
         <% end %>
         <div class="song-title-card">
           <h2><%= playlist.name %></h2>
-          <p class="song-count">240 songs</p>
+          <p class="song-count"><%= playlist.songs.count %> songs</p>
         </div>
       </div>
     <% end %>
