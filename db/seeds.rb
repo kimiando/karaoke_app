@@ -142,15 +142,15 @@ playlist13.photo.attach(io: file13, filename: "playlist13.jpeg", content_type: "
 
 puts "creating playlist for user 3"
 
-playlist21 = Playlist.create(user: user_3, name: "Acoustic Affair Karaoke")
+playlist21 = Playlist.create(user: user_3, name: "My rap songs 😎")
 file21 = File.open(Rails.root.join("app/assets/images/seeds/playlist21.jpeg"))
 playlist21.photo.attach(io: file21, filename: "playlist21.jpeg", content_type: "image/jpeg")
 
-playlist22 = Playlist.create(user: user_3, name: "Karaoke Gold Rush")
+playlist22 = Playlist.create(user: user_3, name: "feeling blue")
 file22 = File.open(Rails.root.join("app/assets/images/seeds/playlist22.jpeg"))
 playlist22.photo.attach(io: file22, filename: "playlist22.jpeg", content_type: "image/jpeg")
 
-playlist23 = Playlist.create(user: user_3, name: "Retro Rewind Sing-alongs")
+playlist23 = Playlist.create(user: user_3, name: "r&b weekly")
 file23 = File.open(Rails.root.join("app/assets/images/seeds/playlist23.jpeg"))
 playlist23.photo.attach(io: file23, filename: "playlist23.jpeg", content_type: "image/jpeg")
 
