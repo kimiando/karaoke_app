@@ -1,0 +1,21 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class=" d-flex justify-content-center align-items-center vh-100">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add a new sesh</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for [bookmark, @sesh] do |f| %>
+            <%= f.input :difficulty,as: :range, input_html: {min: 1, max: 5} %>
+            <%= f.input :key, as: :range, input_html: {min: -5, max: 5} %>
+            <%= f.input :hype_number, as: :range, input_html: {min: 1, max: 5} %>
+            <%= f.submit class: 'create_btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
