@@ -90,6 +90,7 @@ h5 {
   margin-bottom: 12px;
   background-color: #181A20;
   align-items: center;
+  justify-content: center;
 }
 
 .bookmark-row h3 {
@@ -245,4 +246,65 @@ h5 {
 
 .modal-content {
   border-radius: 24px;
+}
+
+.sub-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.sub-navbar-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.playlist-bookmark-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-toggle::after {
+  color: #181A20;
+}
+
+.sub-navbar-item .fa-solid {
+  padding-right: 8px;
+}
+
+.sub-navbar-item .fa-skull {
+  color:purple;
+}
+
+.sub-navbar-item .fa-fire {
+  color: red;
+}
+
+.sub-navbar-item .fa-microphone-lines {
+  color: silver;
+}
+
+
+.dropdown-menu {
+  background-color: #FF9235;
+  border-radius: 16px;
+  color: #181A20;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.add-sesh-item {
+  font-weight: bold;
+}
+
+.modal-body {
+  background-color: #FF9235;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }

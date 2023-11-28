@@ -34,32 +34,38 @@
     <div class="song-container">
       <h1>Songs</h1>
     </div>
-    <div>
-      <% @playlist.bookmarks.each do |bookmark| %>
-        <%= link_to song_path(bookmark.song), class: "playlist-card-link" do %>
-          <div class="bookmark-row">
-            <%= image_tag bookmark.song.photo_url, class: "bookmark-img", crop: :fill %>
-            <div class="card-product-infos bookmark-title">
-              <h3><%= bookmark.song.title %></h3>
-              <span class="bookmark-artist"><%= bookmark.song.artist.name %></span>
-            </div>
-            <%# navbar start %>
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item add-sesh-item" href="#">Delete</a></li>
-              <li><a class="dropdown-item add-sesh-item" href="#">
-                  <div class="form-sesh" data-bs-toggle="modal" data-bs-target="#exampleModal">Add a seshhhh</div>
-                </a>
-              </li>
-              <%# <li><a class="dropdown-item" href="#">Something else here</a></li> %>
-            </ul>
-            <%# navbar end %>
-          <% end %>
+    <% @playlist.bookmarks.each do |bookmark| %>
+      <%= link_to song_path(bookmark.song), class: "playlist-card-link" do %>
+        <div class="bookmark-row">
+          <%= image_tag bookmark.song.photo_url, class: "bookmark-img", crop: :fill %>
+          <div class="card-product-infos bookmark-title">
+            <h3><%= bookmark.song.title %></h3>
+            <span class="bookmark-artist"><%= bookmark.song.artist.name %></span>
+            <%= render "shared/seshes",
+            avg_song_difficulty: bookmark.avg_song_difficulty,
+            avg_hype_number: bookmark.avg_hype_number,
+            number_times_sang: bookmark.number_times_sang
+            %>
+          </div>
+        <% end %>
+        <%# navbar start %>
+        <div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item add-sesh-item" href="#">Delete</a></li>
+            <li><a class="dropdown-item add-sesh-item" href="#">
+                <div class="form-sesh add-sesh-item" data-bs-toggle="modal" data-bs-target="#sesh-<%= bookmark.id %>">Add A Sesh</div>
+              </a>
+            </li>
+            <%# <li><a class="dropdown-item" href="#">Something else here</a></li> %>
+          </ul>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </a>
+          <%# navbar end %>
         </div>
-        <%= render "seshes/form", bookmark: bookmark %>
-      <% end %>
-    </div>
+      </div>
+      <%= render "seshes/form", bookmark: bookmark %>
+    <% end %>
   </div>
+</div>
 </div>
