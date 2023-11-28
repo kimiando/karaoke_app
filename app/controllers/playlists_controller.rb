@@ -23,6 +23,7 @@ class PlaylistsController < ApplicationController
 
   def show
     @playlist = Playlist.find(params[:id])
+    @sesh = Sesh.new
     # @playlists.user = current_user
   end
 

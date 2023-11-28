@@ -206,115 +206,115 @@ place1.save
 file = File.open(Rails.root.join("app/assets/images/place/bigecho.png"))
 place1.photo.attach(io: file, filename: "bigecho.png", content_type: "image/jpeg")
 
-# place2 = Place.create!(
-#   name: "Big Echo",
-#   address: "秀永ビル, Dogen-zaka Street, Dogenzaka 2-chome, Shibuya, Tokyo, 155-0002, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place2.save
-# # file = File.open(Rails.root.join("app/assets/images/place/bigecho.png"))
-# # place2.photo.attach(io: file, filename: "bigecho.png", content_type: "image/jpeg")
+place2 = Place.create!(
+  name: "Big Echo",
+  address: "秀永ビル, Dogen-zaka Street, Dogenzaka 2-chome, Shibuya, Tokyo, 155-0002, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place2.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho.png"))
+place2.photo.attach(io: file, filename: "bigecho.png", content_type: "image/jpeg")
 
-# place3 = Place.create!(
-#   name: "Karaoke Hiroba",
-#   address: "カラオケ歌広場, Miyamasu-zaka Street, Shibuya 2-chome, Shibuya, Tokyo, 150-8510, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place3.save
-# # file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
-# # place3.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
+place3 = Place.create!(
+  name: "Karaoke Hiroba",
+  address: "カラオケ歌広場, Miyamasu-zaka Street, Shibuya 2-chome, Shibuya, Tokyo, 150-8510, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place3.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
+place3.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
 
-# place4 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, Tamagawa-dori, Sangenjaya, Setagaya, Tokyo, 154-0024, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place4.save
-# # file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
-# # place4.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
+place4 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, Tamagawa-dori, Sangenjaya, Setagaya, Tokyo, 154-0024, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place4.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
+place4.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
 
-# place5 = Place.create!(
-#   name: "Karaoke-kan",
-#   address: "Karaoke-kan, Meiji-dori Avenue, Shibuya, Tokyo, 150-8510, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place5.save
-# # file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
-# # place5.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
+place5 = Place.create!(
+  name: "Karaoke-kan",
+  address: "Karaoke-kan, Meiji-dori Avenue, Shibuya, Tokyo, 150-8510, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place5.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
+place5.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
 
-# place7 = Place.create!(
-#   name: "Karaoke-no Tetsujin",
-#   address: "Karaoke-no Tetsujin, Inokashira-dori Street, Udagawacho, Shibuya, Tokyo, 150-0042, Japan",
-#   price_level: "¥¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place7.save
-# # file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin.jpeg"))
-# # place6.photo.attach(io: file, filename: "karaokenotetsujin.jpeg", content_type: "image/jpeg")
+place7 = Place.create!(
+  name: "Karaoke-no Tetsujin",
+  address: "Karaoke-no Tetsujin, Inokashira-dori Street, Udagawacho, Shibuya, Tokyo, 150-0042, Japan",
+  price_level: "¥¥¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place7.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin.jpeg"))
+place6.photo.attach(io: file, filename: "karaokenotetsujin.jpeg", content_type: "image/jpeg")
 
-# place8 = Place.create!(
-#   name: "Big Echo",
-#   address: "Big Echo, Bunkamura-dori Street, Dogenzaka 2-chome, Shibuya, Tokyo, 150-0043, Japan K",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place8.save
-# # file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
-# # place8.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
+place8 = Place.create!(
+  name: "Big Echo",
+  address: "Big Echo, Bunkamura-dori Street, Dogenzaka 2-chome, Shibuya, Tokyo, 150-0043, Japan K",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place8.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
+place8.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
 
-# place9 = Place.create!(
-#   name: "Big Echo",
-#   address: "アポロ, 中目黒, Kami-Meguro 1-chome, Meguro, Tokyo, 153-0051, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place9.save
-# # file = File.open(Rails.root.join("app/assets/images/place/big-echo.png"))
-# # place9.photo.attach(io: file, filename: "big-echo.png", content_type: "image/jpeg")
+place9 = Place.create!(
+  name: "Big Echo",
+  address: "アポロ, 中目黒, Kami-Meguro 1-chome, Meguro, Tokyo, 153-0051, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place9.save
+file = File.open(Rails.root.join("app/assets/images/place/big-echo.png"))
+place9.photo.attach(io: file, filename: "big-echo.png", content_type: "image/jpeg")
 
-# place10 = Place.create!(
-#   name: "Big Echo",
-#   address: "Big Echo, Inokashira-dori Street, Udagawacho, Shibuya, Tokyo, 150-0042, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place10.save
-# # file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
-# # place10.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
+place10 = Place.create!(
+  name: "Big Echo",
+  address: "Big Echo, Inokashira-dori Street, Udagawacho, Shibuya, Tokyo, 150-0042, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place10.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
+place10.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
 
-# place12 = Place.create!(
-#   name: "Karaoke no Tetsujin",
-#   address: "カラオケの鉄人 戸越銀座店, Togoshi Ginza Street, Hiratsuka 1-chome, Shinagawa, Tokyo, 142-0051, Japan",
-#   price_level: "¥¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place12.save
-# # file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin1.jpeg"))
-# # place12.photo.attach(io: file, filename: "karaokenotetsujin1.jpeg", content_type: "image/jpeg")
+place12 = Place.create!(
+  name: "Karaoke no Tetsujin",
+  address: "カラオケの鉄人 戸越銀座店, Togoshi Ginza Street, Hiratsuka 1-chome, Shinagawa, Tokyo, 142-0051, Japan",
+  price_level: "¥¥¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place12.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin1.jpeg"))
+place12.photo.attach(io: file, filename: "karaokenotetsujin1.jpeg", content_type: "image/jpeg")
 
-# place13 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, Daimon Avenue, Shinbashi 6-chome, Shibadaimon 1-chome, Minato, Tokyo, 105-0012, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place13.save
-# # file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
-# # place13.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
+place13 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, Daimon Avenue, Shinbashi 6-chome, Shibadaimon 1-chome, Minato, Tokyo, 105-0012, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place13.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
+place13.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
 
-# place15 = Place.create!(
-#   name: "Karaoke no Tetsujin",
-#   address: "カラオケの鉄人, Daiichi Keihin, Shinbashi 6-chome, Shibadaimon 1-chome, Minato, Tokyo, 105-0012, Japan ",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place15.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin.jpeg"))
-# place15.photo.attach(io: file, filename: "karaokenotetsujin.jpeg", content_type: "image/jpeg")
+place15 = Place.create!(
+  name: "Karaoke no Tetsujin",
+  address: "カラオケの鉄人, Daiichi Keihin, Shinbashi 6-chome, Shibadaimon 1-chome, Minato, Tokyo, 105-0012, Japan ",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place15.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokenotetsujin.jpeg"))
+place15.photo.attach(io: file, filename: "karaokenotetsujin.jpeg", content_type: "image/jpeg")
 
 place16 = Place.create!(
   name: "Big Echo",
@@ -323,8 +323,8 @@ place16 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place16.save
-# file = File.open(Rails.root.join("app/assets/images/place/bigecho.png"))
-# place16.photo.attach(io: file, filename: "bigecho.png", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/bigecho1.png"))
+place16.photo.attach(io: file, filename: "bigecho1.png", content_type: "image/jpeg")
 
 place17 = Place.create!(
   name: "Big Echo",
@@ -333,8 +333,8 @@ place17 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place17.save
-# file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
-# place17.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
+place17.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
 
 place18 = Place.create!(
   name: "Karaoke Hiroba",
@@ -343,16 +343,8 @@ place18 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place18.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaoke-hiroba.jpeg"))
-# place18.photo.attach(io: file, filename: "karaoke-hiroba.jpeg", content_type: "image/jpeg")
-
-# place19 = Place.create!(
-#   name: "Kazu",
-#   address: "Kazu, 西口クロス通り, Kamata 5-chome, Nishi-Kamata 7-chome, Ota, Tokyo, 144-0051, Japan",
-#   price_level: "¥¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place19.save
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-hiroba.jpeg"))
+place18.photo.attach(io: file, filename: "karaoke-hiroba.jpeg", content_type: "image/jpeg")
 
 place20 = Place.create!(
   name: "Karaoke Kan",
@@ -361,8 +353,8 @@ place20 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place20.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
-# place20.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
+place20.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
 
 place21 = Place.create!(
   name: "Karaoke Manekineko",
@@ -371,8 +363,8 @@ place21 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place21.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.jpeg"))
-# place21.photo.attach(io: file, filename: "karaokemanekineko.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
+place21.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
 place22 = Place.create!(
   name: "Karaoke Manekineko",
@@ -381,8 +373,8 @@ place22 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place22.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko1.jpeg"))
-# place22.photo.attach(io: file, filename: "karaokemanekineko1.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.webp"))
+place22.photo.attach(io: file, filename: "karaokemanekineko.webp", content_type: "image/jpeg")
 
 place23 = Place.create!(
   name: "Karaoke Kan",
@@ -391,8 +383,8 @@ place23 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place23.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
-# place23.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
+place23.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
 
 place24 = Place.create!(
   name: "Karaoke Kan",
@@ -401,8 +393,8 @@ place24 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place24.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
-# place24.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
+place24.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
 
 place25 = Place.create!(
   name: "Karaoke Manekineko",
@@ -411,8 +403,8 @@ place25 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place25.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.jpeg"))
-# place25.photo.attach(io: file, filename: "karaokemanekineko.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.avif"))
+place25.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
 place26 = Place.create!(
   name: "Karaoke Manekineko",
@@ -421,155 +413,150 @@ place26 = Place.create!(
   room_option: "Joy Sound & Live Dam"
 )
 place26.save
-# file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.jpeg"))
-# place26.photo.attach(io: file, filename: "karaokemanekineko.jpeg", content_type: "image/jpeg")
+file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.webp"))
+place26.photo.attach(io: file, filename: "karaokemanekineko.webp", content_type: "image/jpeg")
 
-# place27 = Place.create!(
-#   name: "Karaoke Flower",
-#   address: "カラオケフラワー, Nakai-Dori, Nakaochiai 1-chome, Shinjuku, Tokyo, 161-0032, Japan",
-#   price_level: "¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place27.save
-# place28 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "Karaoke Manekineko, Funabori-kaido, Funabori 3-chome, Edogawa, Tokyo, 134-0091, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place28.save
+place28 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "Karaoke Manekineko, Funabori-kaido, Funabori 3-chome, Edogawa, Tokyo, 134-0091, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place28.save
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+place28.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
 
-# place29 = Place.create!(
-#   name: "Karaoke Big",
-#   address: "カラオケBig, Aoto Sun Road Shopping Street, Tateishi 7-chome, Katsushika, Tokyo, 124-8511, Japan",
-#   price_level: "¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place29.save
-# place30 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, Sotobori-dori, Shinbashi 1-chome, Shinbashi, Minato, Tokyo, 100-8959, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place30.save
-# place31 = Place.create!(
-#   name: "Karaoke Joysound",
-#   address: "Karaoke Joysound, Shin-ohashi-dori, Hacchobori 3, Hacchobori, Chuo, Tokyo, 104-0032, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place31.save
-# place32 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, Hitotsugi-dori, Akasaka 3-chome, Akasaka, Minato, Tokyo, 107-8380, Japan ",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place32.save
 
-# place33 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, 外濠環状線, Shinbashi 1-chome, Shinbashi, Minato, Tokyo, 110-8549, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place33.save
-# place34 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "Karaoke Manekineko, 円通寺坂, Akasaka 7-chome, Akasaka, Minato, Tokyo, 107-6328, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place34.save
-# place35 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, Akasaka-mitsuke, Akasaka 3-chome, Akasaka, Minato, Tokyo, 107-8380, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place35.save
-# place36 = Place.create!(
-#   name: "Big Echo",
-#   address: "ビッグエコー, Harumi-dori Avenue, 有楽町二丁目, Yurakucho, Chiyoda, Tokyo, 100-0006, Japan ",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place36.save
-# place37 = Place.create!(
-#   name: "Big Echo",
-#   address: "Big Echo, Harumi-dori Avenue, Yurakucho 1-chome, Yurakucho, Chiyoda, Tokyo, 100-0006, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place37.save
+place30 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, Sotobori-dori, Shinbashi 1-chome, Shinbashi, Minato, Tokyo, 100-8959, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place30.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
+place30.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
 
-# place38 = Place.create!(
-#   name: "Pasela Resort",
-#   address: "PASELA RESORTS, 赤坂みすじ通り, Akasaka 3-chome, Akasaka, Minato, Tokyo, 107-6390, Japan",
-#   price_level: "¥¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place38.save
+place32 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, Hitotsugi-dori, Akasaka 3-chome, Akasaka, Minato, Tokyo, 107-8380, Japan ",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place32.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
+place32.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
 
-# place39 = Place.create!(
-#   name: "Karaoke BanBan",
-#   address: "Karaoke BanBan Skoda-Ekimae, 76-8, Nerima, Tokyo, 176-0005, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place39.save
+place33 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, 外濠環状線, Shinbashi 1-chome, Shinbashi, Minato, Tokyo, 110-8549, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place33.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
+place30.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
 
-# place40 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "Karaoke Manekineko, Yotsume-dori Avenue, Kotobashi 3-chome, Sumida, Tokyo, 135-0001, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place40.save
-# place41 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "Karaoke Manekineko, 千住ほんちょう商店街, Senju 1-chome, Senju, Adachi, Tokyo, 120-0034, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place41.save
-# place42 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, 7, Hachioji, Tokyo, 193-0931, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place42.save
+place34 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "Karaoke Manekineko, 円通寺坂, Akasaka 7-chome, Akasaka, Minato, Tokyo, 107-6328, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place34.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.webp"))
+place34.photo.attach(io: file, filename: "karaokemanekineko.webp", content_type: "image/jpeg")
 
-# place43 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "カラオケ　まねきねこ, Kawasaki kaido;Fuchu kaido, Suge 2-chome, Tama Ward, Kawasaki, Kanagawa Prefecture, 214-0001, Japan ",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place43.save
-# place44 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "Karaoke Manekineko, Edo kaido, Showacho, Akishima, Tokyo, 196-0015, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place44.save
-# place45 = Place.create!(
-#   name: "Karaoke Kan",
-#   address: "Karaoke-kan, Otakibashi-dori Avenue, Nishi-Shinjuku 7-chome, Shinjuku, Tokyo, 169-0074, Japan ",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place45.save
-# place46 = Place.create!(
-#   name: "Karaoke House",
-#   address: "カラオケハウス ヒロ, Mito-kaido Ave., Kanamachi 6-chome, Katsushika, Tokyo, 125-0041, Japan",
-#   price_level: "¥¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place46.save
+place35 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, Akasaka-mitsuke, Akasaka 3-chome, Akasaka, Minato, Tokyo, 107-8380, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place35.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
+place35.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
+
+place36 = Place.create!(
+  name: "Big Echo",
+  address: "ビッグエコー, Harumi-dori Avenue, 有楽町二丁目, Yurakucho, Chiyoda, Tokyo, 100-0006, Japan ",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place36.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
+place36.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
+
+place37 = Place.create!(
+  name: "Big Echo",
+  address: "Big Echo, Harumi-dori Avenue, Yurakucho 1-chome, Yurakucho, Chiyoda, Tokyo, 100-0006, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place37.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho.jpeg"))
+place37.photo.attach(io: file, filename: "bigecho.jpeg", content_type: "image/jpeg")
+
+place40 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "Karaoke Manekineko, Yotsume-dori Avenue, Kotobashi 3-chome, Sumida, Tokyo, 135-0001, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place40.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokemanekineko.webp"))
+place40.photo.attach(io: file, filename: "karaokemanekineko.webp", content_type: "image/jpeg")
+
+place41 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "Karaoke Manekineko, 千住ほんちょう商店街, Senju 1-chome, Senju, Adachi, Tokyo, 120-0034, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place41.save
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+place41.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
+
+place42 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, 7, Hachioji, Tokyo, 193-0931, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place42.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan1.jpeg"))
+place42.photo.attach(io: file, filename: "karaokekan1.jpeg", content_type: "image/jpeg")
+
+place43 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "カラオケ　まねきねこ, Kawasaki kaido;Fuchu kaido, Suge 2-chome, Tama Ward, Kawasaki, Kanagawa Prefecture, 214-0001, Japan ",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place43.save
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+place43.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
+
+place44 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "Karaoke Manekineko, Edo kaido, Showacho, Akishima, Tokyo, 196-0015, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place44.save
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+place44.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
+
+place45 = Place.create!(
+  name: "Karaoke Kan",
+  address: "Karaoke-kan, Otakibashi-dori Avenue, Nishi-Shinjuku 7-chome, Shinjuku, Tokyo, 169-0074, Japan ",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place45.save
+file = File.open(Rails.root.join("app/assets/images/place/karaokekan.jpeg"))
+place45.photo.attach(io: file, filename: "karaokekan.jpeg", content_type: "image/jpeg")
+
 # place47 = Place.create!(
 #   name: "Karaoke Moco Moco",
 #   address: "Karaoke Moco Moco, Shimokitazawa South Exit Shopping Street, Kitazawa 2-chome, Setagaya, Tokyo, 155-9931, Japan",
@@ -584,41 +571,46 @@ place26.save
 #   room_option: "Joy Sound & Live Dam"
 # )
 # place48.save
-# place49 = Place.create!(
-#   name: "Big Echo",
-#   address: "Big Echo, Sunshine Central Street, Minami-Ikebukuro 3-chome, Higashi-Ikebukuro 1-chome, Toshima, Tokyo, 171-8557, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place49.save
-# place50 = Place.create!(
-#   name: "Big Echo,",
-#   address: "Big Echo, Sunshine 60 Street, Minami-Ikebukuro 3-chome, Higashi-Ikebukuro 1-chome, Toshima, Tokyo, 170-0013, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place50.save
-# place51 = Place.create!(
-#   name: "Joy Sound",
-#   address: "JOYSOUND, Mito Kaido, Kanamachi 6-chome, Katsushika, Tokyo, 125-0042, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place51.save
-# place52 = Place.create!(
-#   name: "Karaoke Manekineko",
-#   address: "Karaoke Manekineko, Gakuenminami-odori Avenue, Ninomiya 1-chome, Tsukuba, Ibaraki Prefecture, 305-0033, Japan",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place52.save
-# place53 = Place.create!(
-#   name: "Big Echo",
-#   address: "Big Echo, Gakuenhigashi-odori Avenue, Nishitsubo, Tsukuba, Ibaraki Prefecture, 305-0028, Japan ",
-#   price_level: "¥",
-#   room_option: "Joy Sound & Live Dam"
-# )
-# place53.save
+place49 = Place.create!(
+  name: "Big Echo",
+  address: "Big Echo, Sunshine Central Street, Minami-Ikebukuro 3-chome, Higashi-Ikebukuro 1-chome, Toshima, Tokyo, 171-8557, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place49.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho1.jpeg"))
+place49.photo.attach(io: file, filename: "bigecho1.jpeg", content_type: "image/jpeg")
+
+place50 = Place.create!(
+  name: "Big Echo,",
+  address: "Big Echo, Sunshine 60 Street, Minami-Ikebukuro 3-chome, Higashi-Ikebukuro 1-chome, Toshima, Tokyo, 170-0013, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place50.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
+place50.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
+
+place52 = Place.create!(
+  name: "Karaoke Manekineko",
+  address: "Karaoke Manekineko, Gakuenminami-odori Avenue, Ninomiya 1-chome, Tsukuba, Ibaraki Prefecture, 305-0033, Japan",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place52.save
+file = File.open(Rails.root.join("app/assets/images/place/karaoke-manekineko.aviff"))
+place52.photo.attach(io: file, filename: "karaoke-manekineko.avif", content_type: "image/jpeg")
+
+place53 = Place.create!(
+  name: "Big Echo",
+  address: "Big Echo, Gakuenhigashi-odori Avenue, Nishitsubo, Tsukuba, Ibaraki Prefecture, 305-0028, Japan ",
+  price_level: "¥",
+  room_option: "Joy Sound & Live Dam"
+)
+place53.save
+file = File.open(Rails.root.join("app/assets/images/place/bigecho2.jpeg"))
+place53.photo.attach(io: file, filename: "bigecho2.jpeg", content_type: "image/jpeg")
+
 # place54 = Place.create!(
 #   name: "Karaoke Rainbow",
 #   address: "カラオケレインボー, Tsukubakoen-dori Avenue, Takezono 1-chome, Tsukuba, Ibaraki Prefecture, 305-0033, Japan",

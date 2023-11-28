@@ -2,8 +2,12 @@
   <div class="location-header">
     <h1 class="location-name"><%= place.name %>
     </h1>
-    <%# <%= cl_image_tag place.photo.key, height: 150, width:100, crop: :fill %>
-  </div>
+    <% if place.photo.attached? %>
+      <%= cl_image_tag place.photo.key, height: 150, crop: :fill %>
+    <% else %>
+      <p>No photo attached</p>
+    </div>
+  <% end %>
   <%# add a photo here %>
   <hr>
   <p class="location-info"><i class="fa-solid fa-location-dot fa-bounce" style="color: #df8826;"></i> <%= place.address %></p>
