@@ -24,7 +24,14 @@
     Add to playlist
   <% end %>
 </button>
+<%# add something %>
+<%# <div class="container"> %>
+<div class="cards">
+  <h2> <%= @song.title %> Lyrics:</h2>
+  <p><%= @song.lyrics.gsub(/\n/, "<br/>").html_safe %></p>
 </div>
+</div>
+<%# </div> %>
 <!-- Button trigger modal -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
