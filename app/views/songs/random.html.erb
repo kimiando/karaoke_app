@@ -1,46 +1,11 @@
-<div class="container">
-  <%= link_to root_path do%>
-    <i class="fa-solid fa-arrow-left"></i>
-  <% end %>
-  <h1>hello</h1>
-  <%= link_to random_song_path(current_user), class: "" do %>
-    <button class="button-5" role="button">Try Again?</button>
-  <% end %>
-  <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <i class="fa-solid fa-plus add-icon" style="color: #f8872a;"></i>
-  </div>
-  <%= render "songs/songs_random" %>
-</div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-container">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">My Playlists</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <% current_user.playlists.each do |playlist| %>
-            <% if playlist.songs.where(id: @song.id).exists? %>
-              <div class="d-flex justify-content-between align-items-center add-to-playlist-form-if-exist">
-                <%= playlist.name %>
-                <i class="fa-solid fa-check" style="color: #ffffff;"></i>
-              </div>
-            <% else %>
-              <%= simple_form_for [@bookmark] do |f| %>
-                <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
-                <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
-                <div class="d-flex justify-content-between add-to-playlist-form">
-                  <span class="title"><%= playlist.name %></span>
-                  <%= f.button :button do %>
-                    <i class="fa-solid fa-plus" style="color: #000000;"></i>
-                  <% end %>
-                </div>
-              <% end %>
-            <% end %>
-          <% end %>
-        </div>
-      </div>
-    </div>
+  <%= link_to user_homepage_index_path(current_user) do%>
+  <i class="fa-solid fa-arrow-left"></i>
+<% end %>
+<div class="game-page">
+  <div class="game-page-container">
+    <%= render "songs/songs_random" %>
+    <%= link_to random_song_path(current_user), class: "" do %>
+      <button class="button-5" role="button">Try Again?</button>
+    <% end %>
   </div>
 </div>

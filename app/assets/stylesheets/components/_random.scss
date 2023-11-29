@@ -1,28 +1,11 @@
 .button-5 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #fa6400;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+  margin: 40px;
+  background-color: #FF9235;
+  color: #181A20;
+  font-size: 32px;
+  border-style: none;
+  border-radius: 56px;
+  padding: 16px 56px;
 }
 
 .button-5:hover,
@@ -45,14 +28,13 @@
 // buttons in the modal.
 .button-27 {
   appearance: none;
-  background-color: #000000;
-  border: 2px solid #1A1A1A;
+  background-color: #181A20;
+  border: 2px solid #181A20;
   border-radius: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -89,6 +71,51 @@
   color: #000000;
 }
 
-.add-icon{
+
+
+// .modal {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.modal-title {
+  color: black;
+}
+
+.button-27-title {
+  font-size: 24px;
+}
+
+.game-page {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-page-add-btn {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.game-page-add-btn p {
+  font-size: 24px;
+}
+
+
+.game-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  margin-top: 40px;
 }
