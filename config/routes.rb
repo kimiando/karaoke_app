@@ -19,5 +19,6 @@ Rails.application.routes.draw do
   end
 
   resources :playlists, only: [:new, :create, :show, :edit, :update, :destroy]
-  resources :songs, only: [:index, :show,:destroy ]
+  get "/songs/random", to: "songs#random", as: :random_song
+  resources :songs, only: [:index, :show, :destroy]
 end

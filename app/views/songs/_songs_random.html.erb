@@ -1,0 +1,19 @@
+<%# this is for the partial page for song details %>
+<div class="song-page-container">
+  <%= image_tag @song.photo_url, height: 360, crop: :fill, class: "song-image" %></li>
+<div class="song-info-title-name">
+  <p><i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i><%= @song.title %></p>
+  <p><i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i><%= @song.artist.name %></p>
+  <div data-controller="toggle-play" class="play-btn">
+    <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
+      <audio controls class="d-none" data-toggle-play-target="audio">
+        <source src=<%= @song.audio_url %> type="audio/ogg">
+      </audio>
+    </i>
+  </div>
+</div>
+</div>
+</div>
+<%# add something %>
+<%# <div class="container"> %>
+<%# this is for the add to playlist modal partial %>

@@ -1,0 +1,13 @@
+<div class="container">
+  <%= link_to url_for(:back) do %>
+    <i class="fa-solid fa-arrow-left"></i>
+  <% end %>
+  <h1>hello</h1>
+  <%= link_to random_song_path(current_user), class: "" do %>
+    <button class="button-5" role="button">Try Again?</button>
+  <% end %>
+  <%= link_to random_song_path(current_user), class: "" do %>
+    <div> <i class="fa-solid fa-plus fa-beat-fade" style="color: #f8872a;"></i></div>
+  <% end %>
+  <%= render "songs/songs_random" %>
+</div>
