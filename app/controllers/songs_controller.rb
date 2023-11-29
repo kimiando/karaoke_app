@@ -31,10 +31,14 @@ class SongsController < ApplicationController
     end
     @bookmark = Bookmark.new
   end
-end
 
-  # def destroy
-  #   @song = Booking.find(params[:id])
-  #   @song.destroy
-  #   redirect_to song_path(@song), notice: 'Bookmark was successfully deleted.'
-  # end
+  def destroy
+    @song = Booking.find(params[:id])
+    @song.destroy
+    redirect_to song_path(@song), notice: 'Bookmark was successfully deleted.'
+  end
+
+  def random
+    @song = Song.all.sample
+  end
+end
