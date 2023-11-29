@@ -4,6 +4,11 @@
       <i class="fa-solid fa-music"></i>
       <span class="logo-title">SongFlow</span>
     </div>
+    <%# this is for the random songs %>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      click me! ._.
+    </button>
+    <%# end of the random songs redirect %>
     <%= link_to user_path(current_user), class: "fa-solid-user-icon" do %>
       <i class="fa-solid fa-user" style="color: #ffffff;"></i>
     <% end %>
@@ -103,6 +108,29 @@
         <% end %>
       </div>
       <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">456</div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!-- Modal for the random songs button! -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Random Songs Generator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <%= link_to random_song_path(current_user), class: "" do %>
+          <button class="button-27" role="button">Hype</button>
+        <% end %>
+        <%= link_to random_song_path(current_user), class: "" do %>
+          <button class="button-27" role="button">Easy</button>
+        <% end %>
+        <%= link_to random_song_path(current_user), class: "" do %>
+          <button class="button-27" role="button">Challenge?</button>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
