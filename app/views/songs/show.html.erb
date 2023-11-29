@@ -6,13 +6,6 @@
 <div class="song-info-title-name">
   <p><i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i><%= @song.title %></p>
   <p><i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i><%= @song.artist.name %></p>
-  <div data-controller="toggle-play" class="play-btn">
-    <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
-      <audio controls class="d-none" data-toggle-play-target="audio">
-        <source src=<%= @song.audio_url %> type="audio/ogg">
-      </audio>
-    </i>
-  </div>
 </div>
 <div class="song-create-btn-container">
   <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -22,8 +15,12 @@
       Add To Playlist
     <% end %>
   </button>
-  <div class="song-create_btn">
-    play
+  <div data-controller="toggle-play" class="play-btn">
+    <i class="fa-solid fa-circle-play fa-circle-play-size-show" data-action="click->toggle-play#toggle">
+      <audio controls class="d-none" data-toggle-play-target="audio">
+        <source src=<%= @song.audio_url %> type="audio/ogg">
+      </audio>
+    </i>
   </div>
 </div>
 </div>
