@@ -1,21 +1,29 @@
 <div class="popup-location">
   <div class="location-header">
-    <i class="fa-regular fa-heart" style="color: #f00505;"></i>
-    <h1 class="location-name"><%= place.name %>
-    </h1>
-    <hr>
-    <% if place.photo.attached? %>
-      <%= cl_image_tag place.photo.key, height: 180, width: 180, crop: :fill %>
-    <% else %>
-      <p>No photo attached</p>
-    </div>
-  <% end %>
-  <%# add a photo here %>
-  <hr>
-  <p class="location-info"><i class="fa-solid fa-location-dot fa-bounce" style="color: #df8826;"></i> <%= place.address %></p>
-  <p class="location-info"><strong><%= place.price_level %></strong></p>
-  <div class="room-option">
-    <p class="room-option-label"><em>Room Option:</em></p>
-    <p class="room-option-value"><em><%= place.room_option %></em></p>
   </div>
+  <h1 class="location-name"><%= place.name %>
+  </h1>
+  <hr>
+  <% if place.photo.attached? %>
+    <%= cl_image_tag place.photo.key, height: 180, width: 180, crop: :fill %>
+  <% else %>
+    <p>No photo attached</p>
+  </div>
+<% end %>
+<%# add a photo here %>
+<hr>
+<p class="location-info"><i class="fa-solid fa-location-dot fa-bounce" style="color: #df8826;"></i> <%= place.address %></p>
+<div class="clipboard-container">
+  <div data-controller="clipboard" data-clipboard-feedback-text-value="Location Saved!">
+    <input class="form-control d-none" data-clipboard-target="input" type="text" value="https://www.google.com/maps/place/<%="#{place.latitude},#{place.longitude}"%>" readonly>
+    <div class="input-group-append">
+      <button id="copy-button" class="copy-button" data-action="click->clipboard#copy"><i class="fa-regular fa-copy"></i></button>
+    </div>
+  </div>
+</div>
+<!---<a href="https://www.google.com/maps/place/<%="#{place.latitude},#{place.longitude}"%>" target="_blank"><i class="fa-regular fa-copy"></i></a>-->
+<p class="location-info"><strong><%= place.price_level %></strong></p>
+<div class="room-option">
+  <p class="room-option-label"><em>Room Option:</em></p>
+  <p class="room-option-value"><em><%= place.room_option %></em></p>
 </div>
