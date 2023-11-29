@@ -4,8 +4,14 @@
 <div class="song-page-container">
   <%= image_tag @song.photo_url, height: 360, crop: :fill, class: "song-image" %></li>
 <div class="song-info-title-name">
-  <p><i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i><%= @song.title %></p>
-  <p><i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i><%= @song.artist.name %></p>
+  <div class="movable-title-container">
+    <i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i>
+    <span class="movable-title <%= @song.title.size > 20 ? "moving-animation" : "" %>"><%= @song.title %></span>
+  </div>
+  <div class="movable-title-container">
+    <i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i>
+    <span class="movable-title <%= @song.artist.name.size > 20 ? "moving-animation" : "" %>"><%= @song.artist.name %></span>
+  </div>
 </div>
 <div class="song-create-btn-container">
   <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
