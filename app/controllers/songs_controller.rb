@@ -40,5 +40,6 @@ class SongsController < ApplicationController
 
   def random
     @song = Song.all.sample
+    @bookmark = Bookmark.new
   end
 end
