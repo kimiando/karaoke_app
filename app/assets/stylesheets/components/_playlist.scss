@@ -1,6 +1,6 @@
 .playlist-btn {
   font-size: 20px;
-  color: #181A20;
+  color: white;
   display: flex;
   justify-content: space-evenly;
   height: 40px;
@@ -17,13 +17,13 @@
   padding-top: 11px;
   border-radius: 50px;
   margin: 0px 8px;
-  background-color: #FF9235;
+  background-color: #303338;
 }
 
 .playlist-btn-item p {
   padding-left: 8px;
   font-size: 18px;
-  color: #181A20;
+  color: white;
 }
 
 .card-img-top {
@@ -261,7 +261,7 @@ h5 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FF9235;
   font-size: 20px;
 }
 
@@ -278,17 +278,6 @@ h5 {
   padding-right: 8px;
 }
 
-.sub-navbar-item .fa-skull {
-  color:purple;
-}
-
-.sub-navbar-item .fa-fire {
-  color: red;
-}
-
-.sub-navbar-item .fa-microphone-lines {
-  color: silver;
-}
 
 
 .dropdown-menu {
