@@ -50,3 +50,20 @@ hr{
   font-style: italic;
   color: #3498db;
 }
+
+.clipboard-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.copy-button{
+  color: #ffffff;
+  background-color: #df8826;
+  border: none;
+  border-radius: 5px;
+
+  &:disabled{
+    background-color: rgb(230, 183, 97);
+  }
+}
