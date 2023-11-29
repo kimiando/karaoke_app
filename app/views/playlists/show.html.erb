@@ -20,12 +20,9 @@
         <% end %>
       </div>
       <div class="playlist-btn-item">
-        <%= link_to playlist_path(@playlist),
-              method: :delete,
-              class: "playlist-btn-delete",
-              data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
-          <i class="fa-solid fa-trash-can playlist-btn"></i>
-          <p>Delete</p>
+        <%= link_to songs_path(), class: "playlist-btn-edit" do %>
+          <i class="fa-regular fa-plus playlist-btn"></i>
+          <p>Add New Song</p>
         <% end %>
       </div>
     </div>
