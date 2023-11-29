@@ -1,5 +1,5 @@
 <div class="container">
-  <%= link_to root_path do%>
+  <%= link_to user_homepage_index_path(current_user) do%>
     <i class="fa-solid fa-arrow-left"></i>
   <% end %>
   <h1>hello</h1>
@@ -11,6 +11,7 @@
   </div>
   <%= render "songs/songs_random" %>
 </div>
+<%# modal for adding a playlist %>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-container">
     <div class="modal-dialog">

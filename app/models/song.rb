@@ -7,4 +7,14 @@ class Song < ApplicationRecord
 
   validates :title, presence: true
   validates :api_id, presence: true
+  # change the song here
+  def self.favorites
+    songs = []
+    songs << Song.find_by(title: 'Snooze', artist: Artist.find_by(name: 'SZA'))
+    songs << Song.find_by(title: 'Baby', artist: Artist.find_by(name: 'Justin Bieber'))
+    songs << Song.find_by(title: 'Snooze', artist: Artist.find_by(name: 'SZA'))
+    songs << Song.find_by(title: 'Baby', artist: Artist.find_by(name: 'Justin Bieber'))
+    songs << Song.find_by(title: 'Snooze', artist: Artist.find_by(name: 'SZA'))
+    songs
+  end
 end

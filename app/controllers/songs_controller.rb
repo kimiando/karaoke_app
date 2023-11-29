@@ -39,7 +39,9 @@ class SongsController < ApplicationController
   end
 
   def random
-    @song = Song.all.sample
+    # @song = Song.all.sample
+    session[:song_ids] = Song.favorites.pluck(:id) if session[:song_ids].blank?
+    @song = Song.find(session[:song_ids].shift)
     @bookmark = Bookmark.new
   end
 end
