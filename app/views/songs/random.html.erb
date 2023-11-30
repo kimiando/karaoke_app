@@ -21,7 +21,11 @@
                 <% if playlist.songs.where(id: @song.id).exists? %>
                   <div class="d-flex justify-content-between align-items-center add-to-playlist-form-if-exist">
                     <%= playlist.name %>
-                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+
+                    <i class="fa-solid fa-check" style="color: #FFFFFF;"></i>
+
+
+
                   </div>
                 <% else %>
                   <%= simple_form_for [@bookmark] do |f| %>
