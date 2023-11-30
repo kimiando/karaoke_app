@@ -53,7 +53,7 @@
             <h2>See All</h2>
           </div>
           <div class="homepage-song-conatiner">
-            <% @recent_bookmarks.each do |bookmark| %>
+            <% @popular_songs.each do |bookmark| %>
               <%= link_to song_path(bookmark.song ) do %>
                 <div class="homepage-song-content">
                   <%= image_tag bookmark.song.photo_url, class: "homepage-song-img", crop: :fill %>
@@ -68,11 +68,11 @@
         </div>
         <div class="homepage-suggested-box">
           <div class="tab-content-item">
-            <h1>Top 10 Easy Songs For Beginners</h1>
+            <h1>Made For You</h1>
             <h2>See All</h2>
           </div>
           <div class="homepage-song-conatiner">
-            <% @recent_bookmarks.reverse.each do |bookmark| %>
+            <% @easy_songs.reverse.each do |bookmark| %>
               <%= link_to song_path(bookmark.song ) do %>
                 <div class="homepage-song-content">
                   <%= image_tag bookmark.song.photo_url, class: "homepage-song-img", crop: :fill %>

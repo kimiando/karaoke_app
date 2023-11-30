@@ -44,7 +44,7 @@ class SongsController < ApplicationController
     puts
     p session[:song_ids]
     puts
-    @song = Song.find_by(id: session[:song_ids].shift) || Song.all.samples
+    @song = Song.find_by(id: session[:song_ids].shift) || Song.all.sample?
     @bookmark = Bookmark.new
     # raise
   end
