@@ -4,8 +4,8 @@
 <div class="game-page">
   <div class="game-page-container">
     <%= render "songs/songs_random" %>
-    <%= link_to random_song_path(current_user), class: "" do %>
-      <button class="button-5" role="button">Try Again</button>
+    <%= link_to random_song_path, class: "button-5" do %>
+      Try Again
     <% end %>
     <%# modal for adding a playlist %>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -21,7 +21,11 @@
                 <% if playlist.songs.where(id: @song.id).exists? %>
                   <div class="d-flex justify-content-between align-items-center add-to-playlist-form-if-exist">
                     <%= playlist.name %>
+
                     <i class="fa-solid fa-check" style="color: #FFFFFF;"></i>
+
+
+
                   </div>
                 <% else %>
                   <%= simple_form_for [@bookmark] do |f| %>
