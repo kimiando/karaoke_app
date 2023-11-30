@@ -4,11 +4,12 @@
 <div class="game-page">
   <div class="game-page-container">
     <%= render "songs/songs_random" %>
-    <%= link_to random_song_path(current_user), class: "" do %>
-      <button class="button-5" role="button">Try Again</button>
+    <%= link_to random_song_path, class: "button-5" do %>
+      Try Again
     <% end %>
     <%# modal for adding a playlist %>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <%# <div class=" d-flex justify-content-center align-items-center vh-100"> %>
       <div class="modal-container">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -41,3 +42,6 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<%# </div> %>
