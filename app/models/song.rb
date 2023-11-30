@@ -24,6 +24,10 @@ class Song < ApplicationRecord
     songs << song if song
     song = Song.find_by(title: 'NO', artist: Artist.find_by(name: 'Meghan Trainor'))
     songs << song if song
+    song = Song.find_by(title: 'Rude', artist: Artist.find_by(name: 'MAGIC!'))
+    songs << song if song
+    song = Song.find_by(title: 'Hello', artist: Artist.find_by(name: 'Adele'))
+    songs << song if song
     songs
   end
 end
