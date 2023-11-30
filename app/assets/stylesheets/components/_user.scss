@@ -25,4 +25,14 @@
   padding: 4px;
   border-radius: 32px;
   width: 136px;
+  margin-bottom: 64px;
+}
+
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FF9235;
+  height: 100%;
+  margin: 0px 20px;
 }
