@@ -5,8 +5,13 @@
       <span class="logo-title">SongFlow</span>
     </div>
     <%# this is for the random songs %>
-    <button type="button" class="button-5" data-bs-toggle="modal" data-bs-target="#randomButtonModal">
-      Random Songs
+
+    <button type="button" class="btn game-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <span class="game-title">SING NOW</span>
+
+
+
+
     </button>
     <%# end of the random songs redirect %>
   </div>
@@ -125,25 +130,44 @@
 </div>
 <!-- Modal -->
 <!-- Modal for the random songs button! -->
-<div class="modal fade" id="randomButtonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade game-modal-conatiner" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class=" d-flex justify-content-center align-items-center vh-100">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Random Songs Generator</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <%= link_to random_song_path(current_user), class: "" do %>
-            <button class="button-27" role="button">Hype</button>
-          <% end %>
-          <%= link_to random_song_path(current_user), class: "" do %>
-            <button class="button-27" role="button">Easy</button>
-          <% end %>
-          <%= link_to random_song_path(current_user), class: "" do %>
-            <button class="button-27" role="button">Challenge?</button>
-          <% end %>
-        </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Random Songs Generator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <%= link_to random_song_path(current_user), class: "" do %>
+          <button class="button-27 button-27-title" role="button">Hype</button>
+        <% end %>
+        <%= link_to random_song_path(current_user), class: "" do %>
+          <button class="button-27 button-27-title" role="button">Easy</button>
+        <% end %>
+        <%= link_to random_song_path(current_user), class: "" do %>
+          <button class="button-27 button-27-title" role="button">Challenge</button>
+        <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   </div>

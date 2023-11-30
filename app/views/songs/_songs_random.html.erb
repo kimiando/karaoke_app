@@ -1,19 +1,101 @@
 <%# this is for the partial page for song details %>
-<div class="song-page-container">
+<div class="game-modal-container">
   <%= image_tag @song.photo_url, height: 360, crop: :fill, class: "song-image" %></li>
 <div class="song-info-title-name">
-  <p><i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i><%= @song.title %></p>
-  <p><i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i><%= @song.artist.name %></p>
+  <div class="movable-title-container">
+    <i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i>
+    <span class="movable-title <%= @song.title.size > 20 ? "moving-animation" : "" %>"><%= @song.title %></span>
+  </div>
+  <div class="movable-title-container">
+    <i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i>
+    <span class="movable-title <%= @song.artist.name.size > 20 ? "moving-animation" : "" %>"><%= @song.artist.name %></span>
+  </div>
+</div>
+<div class="song-create-btn-container">
+  <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <% if @song.playlists.where(user: current_user).exists? %>
+      <div class="already-added-btn">
+        <i class="fa-solid fa-check fa-check-added"></i>
+        Added
+      </div>
+    <% else %>
+      Add To Playlist
+    <% end %>
+  </button>
   <div data-controller="toggle-play" class="play-btn">
-    <i class="fa-solid fa-circle-play fa-circle-play-size" data-action="click->toggle-play#toggle">
+    <i class="fa-solid fa-circle-play fa-circle-play-size-show" data-action="click->toggle-play#toggle">
       <audio controls class="d-none" data-toggle-play-target="audio">
         <source src=<%= @song.audio_url %> type="audio/mpeg">
       </audio>
     </i>
   </div>
 </div>
-</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">My Playlists</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <% current_user.playlists.each do |playlist| %>
+            <% if playlist.songs.where(id: @song.id).exists? %>
+              <div class="d-flex justify-content-between align-items-center add-to-playlist-form-if-exist">
+                <%= playlist.name %>
+                <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+              </div>
+            <% else %>
+              <%= simple_form_for [@bookmark] do |f| %>
+                <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
+                <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
+                <div class="d-flex justify-content-between add-to-playlist-form">
+                  <span class="title"><%= playlist.name %></span>
+                  <%= f.button :button do %>
+                    <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                  <% end %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <%# add something %>
 <%# <div class="container"> %>
 <%# this is for the add to playlist modal partial %>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">My Playlists</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <% current_user.playlists.each do |playlist| %>
+            <% if playlist.songs.where(id: @song.id).exists? %>
+              <div class="d-flex justify-content-between align-items-center add-to-playlist-form-if-exist">
+                <%= playlist.name %>
+                <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+              </div>
+            <% else %>
+              <%= simple_form_for [@bookmark] do |f| %>
+                <%= f.association :playlist, as: :hidden, input_html: { value: playlist.id }%>
+                <%= f.association :song, as: :hidden, input_html: { value: @song.id }%>
+                <div class="d-flex justify-content-between add-to-playlist-form">
+                  <span class="title"><%= playlist.name %></span>
+                  <%= f.button :button do %>
+                    <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                  <% end %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,12 +4,13 @@
       <%= f.text_field :query,
                       class: "song-search-bar",
                       value: params[:query],
-                      placeholder: " Search Song ...",
+                      placeholder: "Search by song name",
                       data: {
                       action: "keyup->search-songs#update",
                       search_songs_target: "input"
                       }
                       %>
+      <i class="fa-solid fa-magnifying-glass search_page-icon" style="color: #ffffff;"></i>
     <% end %>
     <div data-search-songs-target='list'>
       <%= render "songs/list", songs: @songs %>

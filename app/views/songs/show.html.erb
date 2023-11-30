@@ -16,7 +16,10 @@
 <div class="song-create-btn-container">
   <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <% if @song.playlists.where(user: current_user).exists? %>
-      View Playlists
+      <div class="already-added-btn">
+        <i class="fa-solid fa-check fa-check-added""></i>
+        Added
+      </div>
     <% else %>
       Add To Playlist
     <% end %>
@@ -75,3 +78,4 @@
       </div>
     </div>
   </div>
+</div>

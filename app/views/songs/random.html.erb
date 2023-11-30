@@ -1,16 +1,13 @@
-<div class="container">
+
   <%= link_to user_homepage_index_path(current_user) do%>
-    <i class="fa-solid fa-arrow-left"></i>
-  <% end %>
-  <h1>hello</h1>
-  <%= link_to random_song_path(current_user), class: "" do %>
-    <button class="button-5" role="button">Try Again?</button>
-  <% end %>
-  <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <i class="fa-solid fa-plus add-icon" style="color: #f8872a;"></i>
-  </div>
-  <%= render "songs/songs_random" %>
-</div>
+  <i class="fa-solid fa-arrow-left"></i>
+<% end %>
+<div class="game-page">
+  <div class="game-page-container">
+    <%= render "songs/songs_random" %>
+    <%= link_to random_song_path(current_user), class: "" do %>
+      <button class="button-5" role="button">Try Again</button>
+    <% end %>
 <%# modal for adding a playlist %>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-container">

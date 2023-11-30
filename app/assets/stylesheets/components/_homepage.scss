@@ -8,7 +8,7 @@
 .bar-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   margin: 24px 0px;
   justify-content: space-between;
   width: 86%;
@@ -83,4 +83,23 @@
   height: 48px;
   width: 48px;
   margin-right: 4px;
+}
+
+
+.game-title {
+  font-size: 20px;
+  color: #FF9235;
+  animation: game-title 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes game-title {
+  0%,
+  100% {
+    text-shadow: 0 0 3px #FF9235, 0 0 0px #FF9235, 0 0 3px #FF9235;
+  }
+  50% {
+    text-shadow: 0 0 6px white, 0 0 0px white, 0 0 6px white;
+    color: white;
+  }
+
 }
