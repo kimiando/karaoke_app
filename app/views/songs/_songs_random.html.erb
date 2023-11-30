@@ -1,18 +1,18 @@
 <%# this is for the partial page for song details %>
 <div class="game-modal-container">
-  <%= image_tag @song.photo_url, height: 360, crop: :fill, class: "song-image" %></li>
+  <%= image_tag @song.photo_url, height: 360, crop: :fill, class: "game-page-song-image" %></li>
 <div class="song-info-title-name">
-  <div class="movable-title-container">
-    <i class="fa-solid fa-record-vinyl fa-solid-song-info" style="color: #ffffff;"></i>
-    <span class="movable-title <%= @song.title.size > 20 ? "moving-animation" : "" %>"><%= @song.title %></span>
+  <div class="song-page-movable-title-container">
+    <i class="fa-solid fa-record-vinyl fa-solid-game-page-title " style="color: #303338;"></i>
+    <span class="song-page-movable-title <%= @song.title.size > 20 ? "moving-animation" : "" %>"><%= @song.title %></span>
   </div>
-  <div class="movable-title-container">
-    <i class="fa-solid fa-user fa-solid-song-info" style="color: #ffffff;"></i>
-    <span class="movable-title <%= @song.artist.name.size > 20 ? "moving-animation" : "" %>"><%= @song.artist.name %></span>
+  <div class="song-page-movable-title-container">
+    <i class="fa-solid fa-user fa-solid-game-page-title" style="color: #303338;"></i>
+    <span class="song-page-movable-title <%= @song.artist.name.size > 20 ? "moving-animation" : "" %>"><%= @song.artist.name %></span>
   </div>
 </div>
 <div class="song-create-btn-container">
-  <button type="button" class="song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <button type="button" class="game-page-song-create_btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <% if @song.playlists.where(user: current_user).exists? %>
       <div class="already-added-btn">
         <i class="fa-solid fa-check fa-check-added"></i>
@@ -23,7 +23,7 @@
     <% end %>
   </button>
   <div data-controller="toggle-play" class="play-btn">
-    <i class="fa-solid fa-circle-play fa-circle-play-size-show" data-action="click->toggle-play#toggle">
+    <i class="fa-solid fa-circle-play fa-circle-play-game-page" data-action="click->toggle-play#toggle">
       <audio controls class="d-none" data-toggle-play-target="audio">
         <source src=<%= @song.audio_url %> type="audio/mpeg">
       </audio>
