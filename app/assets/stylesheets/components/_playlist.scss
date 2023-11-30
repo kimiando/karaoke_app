@@ -297,3 +297,15 @@ h5 {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+.create-playlist-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sesh-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -24,22 +24,23 @@
   <% end %>
 </div>
 <!-- Modal -->
-<div class=" d-flex justify-content-center align-items-center vh-100">
-  <div class="modal fade" id="new-playlist-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class=" d-flex justify-content-center align-items-center vh-100">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Playlist</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body formplaylist">
-            <%= simple_form_for [@new_playlist] do |f| %>
+<%# <div class=" d-flex justify-content-center align-items-center vh-100"> %>
+<div class="modal fade" id="new-playlist-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class=" d-flex justify-content-center align-items-center vh-100">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Playlist</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body formplaylist">
+          <%= simple_form_for [@new_playlist] do |f| %>
+            <div class="create-playlist-form-container">
               <%= f.input :name, label_html: { class: "form-label" } %>
               <%= f.input :photo, as: :file, label_html: { class: "form-label" } %>
               <%= f.submit class: 'create_btn btn-primary' %>
-            <% end %>
-          </div>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
