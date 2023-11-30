@@ -10,23 +10,25 @@
         <div class="modal-body">
           <div class="sesh-form-container">
             <%= simple_form_for [bookmark, @sesh] do |f| %>
-              <%= f.input :difficulty,as: :range, input_html: {id: "difficulty-sesh", min: 1, max: 5}%>
-              <div class="d-flex flex-direction-row justify-content-between bar-number">
-                <p class="bar-number-one">1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p class="bar-number-five">5</p>
+              <div class="sesh-form-content">
+                <%= f.input :difficulty,as: :range, input_html: {id: "difficulty-sesh", min: 1, max: 5}%>
+                <div class="d-flex flex-direction-row justify-content-between bar-number">
+                  <p class="bar-number-one">1</p>
+                  <p>2</p>
+                  <p>3</p>
+                  <p>4</p>
+                  <p class="bar-number-five">5</p>
+                </div>
+                <%= f.input :hype_number, as: :range, input_html: {id: "hype-sesh", min: 1, max: 5} %>
+                <div class="d-flex flex-direction-row justify-content-between bar-number">
+                  <p class="bar-number-one">1</p>
+                  <p>2</p>
+                  <p>3</p>
+                  <p>4</p>
+                  <p class="bar-number-five">5</p>
+                </div>
+                <%= f.submit class: 'create_btn btn-primary', value: "Save" %>
               </div>
-              <%= f.input :hype_number, as: :range, input_html: {id: "hype-sesh", min: 1, max: 5} %>
-              <div class="d-flex flex-direction-row justify-content-between bar-number">
-                <p class="bar-number-one">1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p class="bar-number-five">5</p>
-              </div>
-              <%= f.submit class: 'create_btn btn-primary', value: "Save" %>
             <% end %>
           </div>
         </div>
