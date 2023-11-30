@@ -1,5 +1,6 @@
-.landing-page {
-  background-image: asset-url("pic1.webp");
+.logo-for-background {
+  width: 200px;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,14 +13,19 @@
 }
 
 .btn-primary-landing {
+  margin-top: 16px;
   background-color: rgba(120, 120, 120, 0.3);
   border-style: none;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
+  margin-right: 16px;
+  border-radius: 8px;
+  font-size: 20px;
 }
 
 .landing-title {
   display: flex;
   flex-direction: column;
+  align-items: end;
 }
 
 .landing-title h1 {
@@ -30,4 +36,14 @@
 .landing-title h2 {
   font-size: 16px;
   margin-bottom: 24px;
+}
+
+.landing-page-body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 152px;
+  margin-left: 9px;
 }

@@ -1,11 +1,13 @@
-<body class="landing-page">
-  <div class="landing-container">
-    <div class="landing-title">
-      <h1>Welcome to SongFlow</h1>
-      <h2>Craft personalized karaoke lists with your favorite hits. Your stage, your playlist – let the singing adventure begin!</h2>
-      <%= link_to  new_user_session_path do %>
-        <button type="button" class="btn btn-primary btn-primary-landing">Sign In</button>
-      <% end %>
-    </div>
+<div class="landing-page-body">
+  <div class="landing-title">
+    <%= link_to  new_user_session_path do %>
+      <button type="button" class="btn btn-primary btn-primary-landing">Sign In</button>
+    <% end %>
   </div>
-</body>
+  <body class="landing-page">
+    <div class="starwars-demo">
+      <%= image_tag("logo.png", class: "star") %>
+      <h2 class="byline" id="byline">SongFlow</h2>
+    </div>
+  </body>
+</div>
