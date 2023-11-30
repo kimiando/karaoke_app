@@ -8,8 +8,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <%= simple_form_for [bookmark, @sesh] do |f| %>
-            <div class="sesh-form-container">
+          <div class="sesh-form-container">
+            <%= simple_form_for [bookmark, @sesh] do |f| %>
               <%= f.input :difficulty,as: :range, input_html: {id: "difficulty-sesh", min: 1, max: 5}%>
               <div class="d-flex flex-direction-row justify-content-between bar-number">
                 <p class="bar-number-one">1</p>
@@ -27,8 +27,8 @@
                 <p class="bar-number-five">5</p>
               </div>
               <%= f.submit class: 'create_btn btn-primary', value: "Save" %>
-            </div>
-          <% end %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
