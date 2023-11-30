@@ -4,15 +4,30 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Add a new sesh</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <%= simple_form_for [bookmark, @sesh] do |f| %>
-            <%= f.input :difficulty,as: :range, input_html: {min: 1, max: 5} %>
-            <%= f.input :key, as: :range, input_html: {min: -5, max: 5} %>
-            <%= f.input :hype_number, as: :range, input_html: {min: 1, max: 5} %>
-            <%= f.submit class: 'create_btn btn-primary' %>
+            <div class="sesh-form-container">
+              <%= f.input :difficulty,as: :range, input_html: {id: "difficulty-sesh", min: 1, max: 5}%>
+              <div class="d-flex flex-direction-row justify-content-between bar-number">
+                <p class="bar-number-one">1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p class="bar-number-five">5</p>
+              </div>
+              <%= f.input :hype_number, as: :range, input_html: {id: "hype-sesh", min: 1, max: 5} %>
+              <div class="d-flex flex-direction-row justify-content-between bar-number">
+                <p class="bar-number-one">1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p class="bar-number-five">5</p>
+              </div>
+              <%= f.submit class: 'create_btn btn-primary', value: "Save" %>
+            </div>
           <% end %>
         </div>
       </div>

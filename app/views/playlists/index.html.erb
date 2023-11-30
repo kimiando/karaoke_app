@@ -35,9 +35,11 @@
         </div>
         <div class="modal-body formplaylist">
           <%= simple_form_for [@new_playlist] do |f| %>
-            <%= f.input :name, label_html: { class: "form-label" } %>
-            <%= f.input :photo, as: :file, label_html: { class: "form-label" } %>
-            <%= f.submit class: 'create_btn btn-primary' %>
+            <div class="create-playlist-form-container">
+              <%= f.input :name, label_html: { class: "form-label" } %>
+              <%= f.input :photo, as: :file, label_html: { class: "form-label" } %>
+              <%= f.submit class: 'create_btn btn-primary' %>
+            </div>
           <% end %>
         </div>
       </div>
