@@ -1,7 +1,9 @@
 <div class="logo-body">
   <div class="bar-container">
     <div class="logo-container">
-      <%= image_tag("logo.png", class: "logo-size") %>
+      <%= link_to root_path do %>
+        <%= image_tag("logo.png", class: "logo-size") %>
+      <% end %>
       <span class="logo-title">SongFlow</span>
     </div>
     <%# this is for the random songs %>
