@@ -52,17 +52,19 @@
                 <div class="form-sesh add-sesh-item" data-bs-toggle="modal" data-bs-target="#sesh-<%= bookmark.id %>">Rate The Song</div>
               </a>
             </li>
-            <li><a class="dropdown-item add-sesh-item" href="#">Delete</a></li>
-            <%# <li><a class="dropdown-item" href="#">Something else here</a></li> %>
-          </ul>
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </a>
-          <%# navbar end %>
-        </div>
+            <li>
+              <%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"dropdown-item add-sesh-item" %>
+            </a></li>
+          <%# <li><a class="dropdown-item" href="#">Something else here</a></li> %>
+        </ul>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </a>
+        <%# navbar end %>
       </div>
-      <%= render "seshes/form", bookmark: bookmark %>
-    <% end %>
-  </div>
+    </div>
+    <%= render "seshes/form", bookmark: bookmark %>
+  <% end %>
+</div>
 </div>
 </div>
