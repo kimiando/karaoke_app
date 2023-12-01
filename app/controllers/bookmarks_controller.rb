@@ -10,6 +10,12 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark(params[:id])
   end
 
+  def destroy
+    @bookmark = Bookmark.find(params[:id])
+    @bookmark.destroy
+    redirect_to playlist_path(@bookmark.playlist), status: :see_other
+  end
+
   private
 
   def bookmark_params
