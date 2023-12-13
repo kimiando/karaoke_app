@@ -7,9 +7,11 @@
       <span class="logo-title">SongFlow</span>
     </div>
     <%# this is for the random songs %>
-    <button type="button" class="btn game-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <%# <button type="button" class="btn game-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> %>
+    <%= link_to random_song_path do %>
       <span class="game-title">INSPIRE ME</span>
-    </button>
+    <% end %>
+    <%# </button> %>
     <%# end of the random songs redirect %>
   </div>
 </div>

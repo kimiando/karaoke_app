@@ -39,12 +39,12 @@ class SongsController < ApplicationController
   # end
 
   def random
-    # @song = Song.all.sample
-    session[:song_ids] = Song.favorites.map(&:id) if session[:song_ids].nil? || session[:song_ids].empty?
-    puts
-    p session[:song_ids]
-    puts
-    @song = Song.find_by(id: session[:song_ids].shift) || Song.all.sample?
+    @song = Song.all.sample
+    # session[:song_ids] = Song.favorites.map(&:id) if session[:song_ids].nil? || session[:song_ids].empty?
+    # puts
+    # p session[:song_ids]
+    # puts
+    # @song = Song.find_by(id: session[:song_ids].shift) || Song.all.sample?
     @bookmark = Bookmark.new
     # raise
   end
