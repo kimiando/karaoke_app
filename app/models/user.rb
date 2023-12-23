@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :bookmarks, through: :playlists
   has_many :seshes, through: :bookmarks
   has_many :songs, through: :bookmarks
-
+  has_one_attached :photo
   def unique_bookmarks
     bookmarks.order(created_at: :desc).limit(30).uniq { |b| b.song_id }
   end
