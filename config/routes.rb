@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :pages, only: [:home]
 
-  resources :users, only: [:show] do
+  resources :users, only: %i[show edit update] do
     resources :playlists, only: [:index]
     resources :seshes, only: [:index]
     resources :homepage, only: [:index]
@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     resources :seshes, only: [:create]
   end
 
-  resources :playlists, only: [:new, :create, :show, :edit, :update, :destroy]
+  resources :playlists, only: %i[new create show edit update destroy]
   get "/songs/random", to: "songs#random", as: :random_song
-  resources :songs, only: [:index, :show, :destroy]
+  resources :songs, only: %i[index show destroy]
 end

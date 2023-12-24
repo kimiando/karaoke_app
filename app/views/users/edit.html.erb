@@ -1,0 +1,15 @@
+<div class="sign-up">
+  <h2>Update</h2>
+  <%= simple_form_for @user do |f| %>
+    <div class="form-inputs">
+      <%= f.input :first_name, input_html: { class: 'new-form' } %>
+      <%= f.input :last_name, input_html: { class: 'new-form' } %>
+      <%= f.input :user_name, input_html: { class: 'new-form' } %>
+      <%= f.input :description, as: :text, input_html: { rows: 5, class: 'new-form' } %>
+      <%= f.input :photo, as: :file, input_html: { class: 'new-form' } %>
+    </div>
+    <div class="form-actions">
+      <%= f.button :submit, "Update", input_html: { class: 'new-form' } %>
+    </div>
+  <% end %>
+</div>

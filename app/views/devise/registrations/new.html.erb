@@ -17,11 +17,6 @@
                 required: true,
                 input_html: { autocomplete: "new-password" },
                 input_html: { class: 'new-form' } %>
-      <%= f.input :user_name,
-      input_html: { class: 'new-form' } %>
-      <%= f.input :description, as: :text, input_html: { rows: 5 },
-      input_html: { class: 'new-form' }  %>
-      <%= f.input :photo, as: :file, input_html: { class: 'new-form' }  %>
     </div>
     <div class="form-actions">
       <%= f.button :submit, "Sign up" , input_html: { class: 'new-form' } %>
