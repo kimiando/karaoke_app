@@ -5,7 +5,6 @@ A web app that allows you to store your favorite music in a playlist—perfect f
 <br>
 App home: www.songflowxyz.xyz
    
-
 ## Built With
 - [Rails 7](https://guides.rubyonrails.org/) - Backend / Front-end
 - [Stimulus JS](https://stimulus.hotwired.dev/) - Front-end JS
@@ -16,4 +15,5 @@ App home: www.songflowxyz.xyz
 
 
 ## Team Members
+- [Kimiko Ando](https://github.com/kimiando)
 - [Nick Lin](https://github.com/Tsungtky)
