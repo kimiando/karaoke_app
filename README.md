@@ -12,8 +12,6 @@ A web app that allows you to store your favorite music in a playlist—perfect f
 - Maps: Find the nearest karaoke place in Tokyo effortlessly
 - Rating Songs (1-5): Helps you identify your strengths and preferences, creating a personalized guide to your karaoke journey
 
-<h3>App home</h3>
-<p>www.songflowxyz.xyz</p>
 <br>
 <img width="430" alt="SF-LP" src="https://github.com/kimiando/SongFlow/assets/117824705/07f92190-0157-4eba-aa53-399887f82183">
 <img width="430" alt="SF-HOME" src="https://github.com/kimiando/SongFlow/assets/117824705/2f50a0fe-25e1-4c93-b7f1-6c03793fb928<img width="430" alt="SF-PLAYLIST" src="https://github.com/kimiando/SongFlow/assets/117824705/0e90b969-f4a8-46d1-aff3-67f938d0fbc1">
